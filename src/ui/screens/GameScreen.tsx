@@ -1,10 +1,11 @@
 import type { JSX } from 'preact';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import type { HintType, QuizQuestion } from '@/core/types';
 import type { RunSnapshot } from '@/core/quiz/marathon';
 import { streakMultiplier } from '@/core/scoring';
 import { countryName, formatNumber, t, tn } from '@/i18n';
 import { config, films, modal, save } from '@/state/app';
-import { answer, canUseHint, proceed, runState, useHint } from '@/state/run';
+import { answer, answerText, canUseHint, giveUp, proceed, runState, useHint } from '@/state/run';
 import { ticketView } from '@/state/economy';
 import { Header } from '../components/Header';
 import {
@@ -59,15 +60,19 @@ export function GameScreen() {
           <Reveals run={run} question={q} />
         </section>
 
-        <ul class="options" key={`${q.key}-opts`}>
-          {q.options.map((id) => (
-            <li key={id}>
-              <OptionButton id={id} run={run} question={q} />
-            </li>
-          ))}
-        </ul>
+        {run.mode === 'hardcore' ? (
+          <AnswerInput key={`${q.key}-input`} run={run} question={q} />
+        ) : (
+          <ul class="options" key={`${q.key}-opts`}>
+            {q.options.map((id) => (
+              <li key={id}>
+                <OptionButton id={id} run={run} question={q} />
+              </li>
+            ))}
+          </ul>
+        )}
 
-        {run.phase === 'reveal' ? <Feedback run={run} question={q} /> : <HintBar />}
+        {run.phase === 'reveal' ? <Feedback run={run} question={q} /> : <HintBar run={run} />}
       </div>
     </div>
   );
@@ -77,7 +82,9 @@ function RunStatus({ run }: { run: RunSnapshot }) {
   const mult = streakMultiplier(Math.max(1, run.streak + 1), config);
   return (
     <div class="run-status">
-      <span class="run-status__q">{t('game.question', { n: run.number })}</span>
+      <span class="run-status__q">
+        {run.mode === 'hardcore' ? t('game.questionHardcore', { n: run.number }) : t('game.question', { n: run.number })}
+      </span>
       <span class="run-status__score" data-testid="score">
         {formatNumber(run.score)}
       </span>
@@ -154,12 +161,90 @@ function OptionButton({ id, run, question }: { id: string; run: RunSnapshot; que
   );
 }
 
-function HintBar() {
+/**
+ * Хардкор: вместо билетов-вариантов — поле для названия. Опечатки, «ё/е» и
+ * варианты названия прощает ядро (core/quiz/titleMatch).
+ */
+function AnswerInput({ run, question }: { run: RunSnapshot; question: QuizQuestion }) {
+  const [value, setValue] = useState('');
+  const input = useRef<HTMLInputElement>(null);
+  const res = run.lastResult;
+
+  if (run.phase === 'reveal') {
+    const typed = res?.kind === 'wrong' ? res.typed : undefined;
+    return (
+      <div class="answer answer--reveal">
+        {typed && (
+          <div class="option is-wrong" aria-label={t('game.yourAnswer')}>
+            <span class="option__title">{typed}</span>
+            <IconCross size={22} />
+          </div>
+        )}
+        <div class="option is-correct" data-testid="answer-title">
+          <span class="option__title">{question.film.title}</span>
+          <IconCheck size={22} />
+        </div>
+      </div>
+    );
+  }
+
+  const submit = (e: Event) => {
+    e.preventDefault();
+    const kind = answerText(value);
+    if (kind === 'saved') setValue('');
+    input.current?.focus();
+  };
+
+  return (
+    <form class="answer" onSubmit={submit}>
+      {run.savedAttempts.length > 0 && (
+        <ul class="answer__attempts">
+          {run.savedAttempts.map((attempt, i) => (
+            <li key={i} class="answer__attempt">
+              {attempt}
+            </li>
+          ))}
+        </ul>
+      )}
+      <input
+        ref={input}
+        class="answer__input"
+        type="text"
+        value={value}
+        onInput={(e) => setValue(e.currentTarget.value)}
+        aria-label={t('game.input.label')}
+        placeholder={t('game.input.placeholder')}
+        maxLength={80}
+        autoFocus
+        autoComplete="off"
+        autoCorrect="off"
+        autoCapitalize="off"
+        spellcheck={false}
+        enterKeyHint="send"
+        data-testid="answer-input"
+        data-answer={import.meta.env.DEV ? question.film.title : undefined}
+      />
+      <div class="answer__actions">
+        <button type="submit" class="ticket-btn" disabled={!value.trim()} data-testid="answer-submit">
+          {t('game.input.submit')}
+        </button>
+        <button type="button" class="ghost-btn" data-testid="give-up" onClick={() => giveUp()}>
+          {t('game.giveUp')}
+        </button>
+      </div>
+    </form>
+  );
+}
+
+function HintBar({ run }: { run: RunSnapshot }) {
   const s = save.value;
   if (!s) return null;
+  // В хардкоре нет вариантов, поэтому 50/50 не показываем вовсе.
+  const hints =
+    run.mode === 'hardcore' ? HINTS.filter(({ type }) => !config.hardcore.disabledHints.includes(type)) : HINTS;
   return (
-    <div class="hints" role="toolbar" aria-label="hints">
-      {HINTS.map(({ type, Icon }) => {
+    <div class="hints" role="toolbar" aria-label="hints" style={{ '--hint-count': hints.length }}>
+      {hints.map(({ type, Icon }) => {
         const owned = s.hints[type];
         const cost = config.hints.cost[type];
         const enabled = canUseHint(type);
@@ -193,6 +278,10 @@ function HintBar() {
 
 function Feedback({ run, question }: { run: RunSnapshot; question: QuizQuestion }) {
   const res = run.lastResult;
+  const next = useRef<HTMLButtonElement>(null);
+  // autoFocus не срабатывает, когда фокус был в поле ввода, которое только что исчезло:
+  // ставим фокус сами, чтобы в хардкоре хватало клавиатуры — Enter, Enter.
+  useEffect(() => next.current?.focus({ preventScroll: true }), []);
   if (!res) return null;
   const correct = res.kind === 'correct';
   return (
@@ -213,7 +302,7 @@ function Feedback({ run, question }: { run: RunSnapshot; question: QuizQuestion 
           </span>
         )}
       </div>
-      <button class="ticket-btn" data-testid="next" onClick={() => proceed()} autoFocus>
+      <button ref={next} class="ticket-btn" data-testid="next" onClick={() => proceed()}>
         {t('game.next')}
       </button>
     </div>

@@ -19,6 +19,9 @@ const ru = {
   'unit.points': { one: '{n} очко', few: '{n} очка', many: '{n} очков', other: '{n} очка' },
 
   'menu.play': 'Играть',
+  'menu.hardcore': 'Хардкор',
+  'menu.hardcore.desc': 'Без вариантов: название вписываете сами',
+  'menu.bestHardcore': 'Рекорд хардкора: {n}',
   'menu.leaderboard': 'Рейтинг',
   'menu.shop': 'Касса',
   'menu.settings': 'Настройки',
@@ -36,6 +39,7 @@ const ru = {
   'tickets.empty.shop': 'Купить в кассе',
 
   'game.question': 'Вопрос {n}',
+  'game.questionHardcore': 'Хардкор · {n}',
   'game.score': 'Счёт',
   'game.streak': 'Серия ×{m}',
   'game.prompt': 'Какой это фильм?',
@@ -52,6 +56,12 @@ const ru = {
   'game.exit.no': 'Играть дальше',
   'game.complete': 'Вы посмотрели все фильмы из программы!',
   'game.notEnoughCoins': 'Не хватает жетонов',
+  'game.input.label': 'Название фильма',
+  'game.input.placeholder': 'Впишите название…',
+  'game.input.submit': 'Ответить',
+  'game.giveUp': 'Не знаю',
+  'game.ambiguous': 'Уточните: так называется не один фильм',
+  'game.yourAnswer': 'Ваш ответ',
 
   'revive.title': 'Билеты закончились',
   'revive.text': 'Досмотрите рекламу, чтобы продолжить сеанс с текущим счётом.',
@@ -76,6 +86,7 @@ const ru = {
   'hint.reveal.director': 'Режиссёр: {name}',
 
   'result.title': 'Сеанс окончен',
+  'result.hardcore': 'Хардкор',
   'result.score': 'Ваш счёт',
   'result.record': 'Новый рекорд!',
   'result.correct': 'Верных ответов',

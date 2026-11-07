@@ -13,7 +13,7 @@ export function ResultScreen() {
   // Полноэкранная реклама — только в паузе между сеансами, по действию игрока.
   const again = async () => {
     await showInterstitial();
-    startRun();
+    startRun(r.mode);
   };
   const toMenu = async () => {
     await showInterstitial();
@@ -25,6 +25,7 @@ export function ResultScreen() {
       <Header />
       <main class="result">
         <h1 class="result__title">{t('result.title')}</h1>
+        {r.mode === 'hardcore' && <p class="result__mode">{t('result.hardcore')}</p>}
 
         <div class={`result__score${r.isRecord ? ' is-record' : ''}`}>
           <span class="result__score-label">{t('result.score')}</span>
@@ -59,7 +60,7 @@ export function ResultScreen() {
           </button>
         )}
 
-        {!authorized.value && r.score > 0 && (
+        {!authorized.value && r.score > 0 && r.mode === 'classic' && (
           <div class="notice">
             <p>{t('result.loginPrompt')}</p>
             <button class="link-btn" onClick={() => void login()}>

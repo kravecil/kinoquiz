@@ -18,8 +18,27 @@
 }
 
 .menu__tickets {
-  margin-top: -10px;
   font-size: 14px;
+  color: var(--text-dim);
+}
+
+/* Два режима: в портрете столбиком, на низком экране — рядом. */
+.menu__modes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.menu__mode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu__hardcore-note {
+  font-size: 13px;
   color: var(--text-dim);
 }
 
@@ -212,11 +231,12 @@
     transform 0.1s;
 }
 
-.option:not(:disabled):hover {
+/* Карточки ответа в хардкоре — не кнопки, им наведение ни к чему. */
+button.option:not(:disabled):hover {
   background: var(--paper-hi);
 }
 
-.option:not(:disabled):active {
+button.option:not(:disabled):active {
   transform: scale(0.985);
 }
 
@@ -254,10 +274,80 @@
   }
 }
 
+/* Хардкор: поле для названия вместо билетов. */
+.answer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.answer__input {
+  width: 100%;
+  min-height: 58px;
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--paper);
+  color: var(--paper-ink);
+  font: inherit;
+  font-weight: 650;
+  font-size: 18px;
+  -webkit-mask:
+    radial-gradient(circle var(--notch) at 0 50%, transparent 98%, #000) left / 51% 100% no-repeat,
+    radial-gradient(circle var(--notch) at 100% 50%, transparent 98%, #000) right / 51% 100% no-repeat;
+  mask:
+    radial-gradient(circle var(--notch) at 0 50%, transparent 98%, #000) left / 51% 100% no-repeat,
+    radial-gradient(circle var(--notch) at 100% 50%, transparent 98%, #000) right / 51% 100% no-repeat;
+  outline: none;
+  transition: background-color 0.15s;
+}
+
+.answer__input::placeholder {
+  color: var(--paper-ink);
+  opacity: 0.45;
+}
+
+.answer__input:focus {
+  background: var(--paper-hi);
+}
+
+.answer__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.answer__actions .ticket-btn {
+  flex: 1;
+  max-width: 300px;
+}
+
+.answer__attempts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.answer__attempt {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--velvet-lo);
+  color: var(--bad);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: line-through;
+  animation: rise 0.2s ease-out;
+}
+
+.answer--reveal .option {
+  min-height: 52px;
+}
+
 /* Подсказки — латунные жетоны внизу экрана. */
 .hints {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(var(--hint-count, 6), 1fr);
   gap: 4px;
   margin-top: auto;
   padding-top: 6px;
@@ -415,6 +505,15 @@
   font-size: 40px;
   line-height: 1.05;
   color: var(--bulb);
+}
+
+.result__mode {
+  margin-top: -14px;
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brass-hi);
 }
 
 .result__score {
@@ -831,6 +930,31 @@
 
   .option {
     min-height: 48px;
+  }
+
+  .answer__input {
+    min-height: 48px;
+  }
+
+  .answer__actions .ticket-btn {
+    min-height: 44px;
+  }
+
+  .menu__modes {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .menu__mode {
+    gap: 4px;
+  }
+
+  .menu__mode .ticket-btn {
+    min-width: 220px;
+    min-height: 52px;
+    padding: 10px 28px;
+    font-size: 18px;
   }
 
   .game {

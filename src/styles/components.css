@@ -142,6 +142,31 @@
   --notch: 13px;
 }
 
+/* Хардкор: тот же билет, но бархатный — «для своих». */
+.ticket-btn--hardcore {
+  min-width: 248px;
+  background: var(--velvet-hi);
+  color: var(--bulb);
+  box-shadow: inset 0 0 0 1px rgba(201, 151, 63, 0.35);
+}
+
+.ticket-btn--hardcore::before {
+  border-color: rgba(235, 203, 131, 0.45);
+}
+
+.ticket-btn--hardcore:hover {
+  background: var(--velvet);
+}
+
+.ticket-btn:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.ticket-btn:disabled:active {
+  transform: none;
+}
+
 .brass-btn {
   display: inline-flex;
   align-items: center;

@@ -14,6 +14,9 @@ const en: Dictionary = {
   'unit.points': { one: '{n} point', other: '{n} points' },
 
   'menu.play': 'Play',
+  'menu.hardcore': 'Hardcore',
+  'menu.hardcore.desc': 'No options — type the title yourself',
+  'menu.bestHardcore': 'Hardcore best: {n}',
   'menu.leaderboard': 'Leaderboard',
   'menu.shop': 'Box office',
   'menu.settings': 'Settings',
@@ -31,6 +34,7 @@ const en: Dictionary = {
   'tickets.empty.shop': 'Visit the box office',
 
   'game.question': 'Question {n}',
+  'game.questionHardcore': 'Hardcore · {n}',
   'game.score': 'Score',
   'game.streak': 'Streak ×{m}',
   'game.prompt': 'Which movie is it?',
@@ -47,6 +51,12 @@ const en: Dictionary = {
   'game.exit.no': 'Keep playing',
   'game.complete': 'You have seen every movie in the program!',
   'game.notEnoughCoins': 'Not enough tokens',
+  'game.input.label': 'Movie title',
+  'game.input.placeholder': 'Type the title…',
+  'game.input.submit': 'Answer',
+  'game.giveUp': 'No idea',
+  'game.ambiguous': 'Be more specific: more than one movie has that name',
+  'game.yourAnswer': 'Your answer',
 
   'revive.title': 'Out of tickets',
   'revive.text': 'Watch an ad to continue the show with your current score.',
@@ -71,6 +81,7 @@ const en: Dictionary = {
   'hint.reveal.director': 'Director: {name}',
 
   'result.title': 'The show is over',
+  'result.hardcore': 'Hardcore',
   'result.score': 'Your score',
   'result.record': 'New record!',
   'result.correct': 'Correct answers',

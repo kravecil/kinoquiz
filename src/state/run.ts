@@ -1,7 +1,7 @@
 import { signal } from '@preact/signals';
-import { MarathonRun, type RunSnapshot } from '@/core/quiz/marathon';
+import { MarathonRun, type RunSnapshot, type TextAnswerResult } from '@/core/quiz/marathon';
 import { createRng, randomSeed } from '@/core/rng';
-import type { HintType } from '@/core/types';
+import type { GameMode, HintType } from '@/core/types';
 import { play } from '@/audio/sfx';
 import { t } from '@/i18n';
 import { config, films, modal, navigate, now, platform, save, showToast } from './app';
@@ -15,6 +15,7 @@ import { submitBestScore } from './leaderboard';
  */
 
 export interface RunResult {
+  mode: GameMode;
   score: number;
   correct: number;
   bestStreak: number;
@@ -33,13 +34,13 @@ function sync(): void {
   runState.value = run?.snapshot() ?? null;
 }
 
-export function startRun(): void {
+export function startRun(mode: GameMode = 'classic'): void {
   if (!hasTickets()) {
     modal.value = { kind: 'noTickets' };
     return;
   }
   const seen = new Set(save.value?.seen ?? []);
-  run = new MarathonRun(films.value, createRng(randomSeed()), config, seen);
+  run = new MarathonRun(films.value, createRng(randomSeed()), config, seen, mode);
   run.start(now());
   runId.value += 1;
   lastResult.value = null;
@@ -51,7 +52,31 @@ export function startRun(): void {
 
 export function answer(optionId: string): void {
   if (!run) return;
-  const result = run.answer(optionId, now());
+  applyResult(run.answer(optionId, now()));
+}
+
+/** Хардкор: ответ вводом. Возвращает итог, чтобы поле ввода знало, очищаться ли. */
+export function answerText(input: string): TextAnswerResult['kind'] | null {
+  if (!run || run.snapshot().phase !== 'question') return null;
+  const result = run.answerText(input, now());
+  if (result.kind === 'unclear') {
+    if (result.reason === 'ambiguous') {
+      play('tap');
+      showToast(t('game.ambiguous'), 'info');
+    }
+    return result.kind;
+  }
+  applyResult(result);
+  return result.kind;
+}
+
+/** Хардкор: «Не знаю» — честная ошибка с показом ответа. */
+export function giveUp(): void {
+  if (!run || run.snapshot().phase !== 'question') return;
+  applyResult(run.giveUp());
+}
+
+function applyResult(result: Exclude<TextAnswerResult, { kind: 'unclear' }>): void {
   if (result.kind === 'correct') {
     play('correct');
     giveCoins(result.coins);
@@ -143,11 +168,13 @@ export async function endRun(): Promise<void> {
   modal.value = null;
   platform().gameplayStop();
 
-  const prevBest = save.value?.stats.bestScore ?? 0;
+  const hardcore = snap.mode === 'hardcore';
+  const prevBest = (hardcore ? save.value?.stats.bestScoreHardcore : save.value?.stats.bestScore) ?? 0;
   const isRecord = snap.score > prevBest;
   updateSave((d) => {
     d.stats.games += 1;
-    d.stats.bestScore = Math.max(d.stats.bestScore, snap.score);
+    if (hardcore) d.stats.bestScoreHardcore = Math.max(d.stats.bestScoreHardcore, snap.score);
+    else d.stats.bestScore = Math.max(d.stats.bestScore, snap.score);
     d.stats.bestStreak = Math.max(d.stats.bestStreak, snap.bestStreak);
     // Помним последние 2000 показанных вопросов.
     d.seen = [...new Set([...d.seen, ...shown])].slice(-2000);
@@ -155,6 +182,7 @@ export async function endRun(): Promise<void> {
   await flushSave();
 
   lastResult.value = {
+    mode: snap.mode,
     score: snap.score,
     correct: snap.correct,
     bestStreak: snap.bestStreak,
@@ -164,7 +192,8 @@ export async function endRun(): Promise<void> {
   };
   runState.value = null;
   navigate('result');
-  if (isRecord) void submitBestScore();
+  // В рейтинг площадки идёт только марафон: у хардкора своей таблицы пока нет.
+  if (isRecord && !hardcore) void submitBestScore();
 }
 
 export async function doubleCoins(): Promise<void> {

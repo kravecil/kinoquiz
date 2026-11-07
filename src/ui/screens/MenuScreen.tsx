@@ -5,10 +5,11 @@ import { startRun } from '@/state/run';
 import { play } from '@/audio/sfx';
 import { Header } from '../components/Header';
 import { Marquee } from '../components/Overlays';
-import { IconGear, IconPlay, IconTicket, IconTrophy } from '../icons';
+import { IconGear, IconKeyboard, IconPlay, IconTicket, IconTrophy } from '../icons';
 
 export function MenuScreen() {
   const best = save.value?.stats.bestScore ?? 0;
+  const bestHardcore = save.value?.stats.bestScoreHardcore ?? 0;
   const tv = ticketView.value;
 
   const ticketLine =
@@ -40,12 +41,31 @@ export function MenuScreen() {
 
         {best > 0 && <p class="menu__best">{t('menu.best', { n: formatNumber(best) })}</p>}
 
-        <button class="ticket-btn ticket-btn--hero" data-testid="play" onClick={() => startRun()}>
-          <IconPlay size={22} />
-          <span>{t('menu.play')}</span>
-        </button>
+        <div class="menu__modes">
+          <div class="menu__mode">
+            <button class="ticket-btn ticket-btn--hero" data-testid="play" onClick={() => startRun()}>
+              <IconPlay size={22} />
+              <span>{t('menu.play')}</span>
+            </button>
+            <p class="menu__tickets">{ticketLine}</p>
+          </div>
 
-        <p class="menu__tickets">{ticketLine}</p>
+          <div class="menu__mode">
+          <button
+            class="ticket-btn ticket-btn--hardcore"
+            data-testid="play-hardcore"
+            onClick={() => startRun('hardcore')}
+          >
+            <IconKeyboard size={22} />
+            <span>{t('menu.hardcore')}</span>
+          </button>
+          <p class="menu__hardcore-note">
+            {bestHardcore > 0
+              ? t('menu.bestHardcore', { n: formatNumber(bestHardcore) })
+              : t('menu.hardcore.desc')}
+          </p>
+          </div>
+        </div>
 
         <nav class="menu__nav">
           <button
