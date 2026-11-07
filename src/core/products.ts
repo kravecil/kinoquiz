@@ -12,8 +12,18 @@ export interface ProductGrant {
   noAds?: boolean;
 }
 
+export type ProductId =
+  | 'starter_pack'
+  | 'tickets_5'
+  | 'unlimited_1h'
+  | 'unlimited_24h'
+  | 'coins_300'
+  | 'coins_1000'
+  | 'coins_3000'
+  | 'no_ads';
+
 export interface ProductDef {
-  id: string;
+  id: ProductId;
   /** Разовая (не расходуемая) покупка: восстанавливается через getPurchases. */
   permanent: boolean;
   grant: ProductGrant;

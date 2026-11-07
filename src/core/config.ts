@@ -19,6 +19,8 @@ export interface GameConfig {
     streakBonusEvery: number;
     streakBonus: number;
     dailyBonus: number;
+    /** Жетоны за просмотр рекламы в кассе. */
+    perAd: number;
   };
   score: {
     base: Record<Difficulty, number>;
@@ -58,6 +60,7 @@ export const defaultConfig: GameConfig = {
     streakBonusEvery: 5,
     streakBonus: 10,
     dailyBonus: 30,
+    perAd: 20,
   },
   score: {
     base: { 1: 100, 2: 150, 3: 200, 4: 300 },

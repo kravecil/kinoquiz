@@ -107,7 +107,7 @@ const ru = {
   'product.coins_300': '300 жетонов',
   'product.coins_300.desc': 'На подсказки',
   'product.coins_1000': '1000 жетонов',
-  'product.coins_1000.desc': 'Выгоднее на 25%',
+  'product.coins_1000.desc': 'Выгоднее, чем по 300',
   'product.coins_3000': '3000 жетонов',
   'product.coins_3000.desc': 'Самый выгодный',
   'product.no_ads': 'Без рекламы',

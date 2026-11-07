@@ -102,7 +102,7 @@ const en: Dictionary = {
   'product.coins_300': '300 tokens',
   'product.coins_300.desc': 'For hints',
   'product.coins_1000': '1000 tokens',
-  'product.coins_1000.desc': '25% better value',
+  'product.coins_1000.desc': 'Better value than 300s',
   'product.coins_3000': '3000 tokens',
   'product.coins_3000.desc': 'Best value',
   'product.no_ads': 'No ads',

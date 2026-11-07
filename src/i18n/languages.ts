@@ -1,5 +1,6 @@
 import type { FilmTexts } from '@/core/types';
 import type { Dictionary } from './types';
+import ruDictionary from './locales/ru';
 
 /**
  * Реестр языков. Чтобы добавить язык:
@@ -25,7 +26,8 @@ export const LANGUAGES: LanguageDef[] = [
     code: 'ru',
     name: 'Русский',
     fallback: null,
-    dictionary: () => import('./locales/ru').then((m) => m.default),
+    // Базовый словарь всегда в основном бандле (он же последний fallback).
+    dictionary: async () => ruDictionary,
     content: () => import('@/content/texts/ru.json').then((m) => m.default as unknown as FilmTexts),
   },
   {

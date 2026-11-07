@@ -1,0 +1,41 @@
+/*
+ * Палитра «Кинотеатр»: винный зал, бархат, латунь, экран и бумага билетов.
+ * Все цвета задаются здесь; компоненты используют только переменные.
+ */
+:root {
+  --hall: #1a0509;
+  --hall-2: #250810;
+  --velvet: #3b0a12;
+  --velvet-hi: #6e1420;
+  --velvet-lo: #240509;
+
+  --brass: #c9973f;
+  --brass-hi: #ebcb83;
+  --brass-lo: #8a6224;
+
+  --screen: #ece8df;
+  --screen-ink: #2a1a14;
+
+  --paper: #f2e3c0;
+  --paper-hi: #fbf0d6;
+  --paper-ink: #3b0a12;
+
+  --bulb: #ffdf9a;
+  --good: #7dc383;
+  --bad: #ff6b6f;
+
+  --text: #f3e6cf;
+  --text-dim: #bfa88a;
+
+  --font-display: 'Poiret One', Georgia, serif;
+  --font-text: 'Manrope Variable', 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --stage-w: 620px;
+  --gutter: 16px;
+  --notch: 10px;
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  color-scheme: dark;
+}
