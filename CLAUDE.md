@@ -7,7 +7,7 @@
 - TypeScript (strict, `noUncheckedIndexedAccess`), Preact 11 + `@preact/signals`, Vite, Vitest. Своего сервера нет.
 - `npm run dev` — игра на localhost:5173 с заглушкой площадки (`?fast=1`, `?lang=en`, `?auth=0`, `?ads=fail`).
 - `npm test` — тесты. `npm run check` — типы и контент.
-- `npm run build` — сборка для Яндекс Игр (с `/sdk.js`, `YandexPlatform`). `npm run pack` — то же + zip для консоли. `npm run build:standalone` — сборка с заглушкой.
+- `npm run build` — сборка для Яндекс Игр (с `/sdk.js`, `YandexPlatform`). `npm run pack` — то же + zip для консоли. `npm run zip` — только zip из готового `dist/`. `npm run build:standalone` — сборка с заглушкой.
 - Площадка выбирается при сборке через `VITE_PLATFORM` (`.env.*`). В боевой сборке не должно быть кода `LocalPlatform` (проверка: в `dist/assets/*.js` нет строки `MOCK`).
 - Перед каждым коммитом: `npm run check && npm test`. Оба должны проходить.
 

@@ -12,6 +12,7 @@ npm run dev               # http://localhost:5173, заглушка площад
 npm test                  # тесты ядра, контента, локализации и адаптера Яндекса
 npm run build             # сборка для Яндекс Игр в dist/ (с /sdk.js)
 npm run pack              # build + архив kinoquiz-yandex-<версия>.zip для консоли
+npm run zip               # только архив из уже собранного dist/, без пересборки
 npm run build:standalone  # сборка с заглушкой — демо вне Яндекс Игр
 ```
 
