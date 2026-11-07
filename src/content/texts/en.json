@@ -1,0 +1,489 @@
+{
+  "shawshank": {
+    "title": "The Shawshank Redemption",
+    "aliases": [
+      "Shawshank"
+    ],
+    "director": "Frank Darabont",
+    "descriptions": [
+      "A banker convicted of killing his wife gets a life sentence. He does the guards' taxes, builds a prison library and spends twenty years patiently chipping at a wall with a tiny rock hammer.",
+      "A poster on a cell wall hides more than it seems. A story about hope that bars cannot take away."
+    ]
+  },
+  "green_mile": {
+    "title": "The Green Mile",
+    "aliases": [],
+    "director": "Frank Darabont",
+    "descriptions": [
+      "A death row guard in the 1930s meets a gentle giant of an inmate who can heal with a touch. A trained mouse lives in the cell block too.",
+      "A prison officer realizes the giant awaiting execution is innocent and gifted with a miracle. But the machine is already in motion."
+    ]
+  },
+  "forrest_gump": {
+    "title": "Forrest Gump",
+    "aliases": [],
+    "director": "Robert Zemeckis",
+    "descriptions": [
+      "A kind man with a low IQ tells strangers at a bus stop about his life: Vietnam, ping-pong, a shrimp business and running across America. Life is like a box of chocolates.",
+      "A good-hearted man keeps stumbling into the biggest moments of half a century of American history, while loving one girl his whole life."
+    ]
+  },
+  "intouchables": {
+    "title": "The Intouchables",
+    "aliases": [
+      "Intouchables",
+      "Untouchable"
+    ],
+    "director": "Olivier Nakache, Éric Toledano",
+    "descriptions": [
+      "A paralyzed Parisian aristocrat hires a young man from the projects as his caregiver, though he only came for a signature for his benefits. Soon they race a Maserati and dance to Earth, Wind & Fire.",
+      "A rich man who cannot move and a poor man with nothing to lose teach each other how to live. A French comedy based on a true story."
+    ]
+  },
+  "schindler": {
+    "title": "Schindler's List",
+    "aliases": [],
+    "director": "Steven Spielberg",
+    "descriptions": [
+      "A German industrialist and Nazi party member spends his fortune saving over a thousand Jews by listing them as workers at his factory. Shot in black and white, except for a girl in a red coat.",
+      "An entrepreneur who started out for profit turns his own business into a way of saving lives during the Holocaust."
+    ]
+  },
+  "interstellar": {
+    "title": "Interstellar",
+    "aliases": [],
+    "director": "Christopher Nolan",
+    "descriptions": [
+      "Earth is dying from dust storms, and a former pilot flies through a wormhole near Saturn to find humanity a new home. On a planet near a black hole, one hour equals seven years.",
+      "A father leaves his daughter to save her future and tries to send her a message through a bookshelf."
+    ]
+  },
+  "leon": {
+    "title": "Léon: The Professional",
+    "aliases": [
+      "Leon",
+      "The Professional"
+    ],
+    "director": "Luc Besson",
+    "descriptions": [
+      "A quiet hitman in New York drinks milk, cares for a houseplant and unexpectedly protects a 12-year-old neighbor whose family was murdered by a corrupt cop.",
+      "A lonely hired gun teaches a girl his trade, and she teaches him how to be human."
+    ]
+  },
+  "lion_king": {
+    "title": "The Lion King",
+    "aliases": [],
+    "director": "Roger Allers, Rob Minkoff",
+    "descriptions": [
+      "A treacherous uncle arranges the ruler's death in a wildebeest stampede, and the young heir runs off to the jungle, where a meerkat and a warthog teach him a carefree life — hakuna matata.",
+      "An heir who believes he is to blame must return home and take his place in the circle of life."
+    ]
+  },
+  "fight_club": {
+    "title": "Fight Club",
+    "aliases": [],
+    "director": "David Fincher",
+    "descriptions": [
+      "An insomniac office worker meets a charismatic soap salesman. Together they start underground brawls in a bar basement. The first rule is not to talk about them.",
+      "A man tired of catalog furniture and an empty life finds a radical new friend. Too radical."
+    ]
+  },
+  "back_future": {
+    "title": "Back to the Future",
+    "aliases": [],
+    "director": "Robert Zemeckis",
+    "descriptions": [
+      "A teenager is accidentally sent 30 years into the past in a DeLorean built by an eccentric scientist. Now he must get his parents to fall in love, or he will fade away.",
+      "To get home, the hero needs 1.21 gigawatts and a lightning strike on the clock tower."
+    ]
+  },
+  "matrix": {
+    "title": "The Matrix",
+    "aliases": [
+      "Matrix"
+    ],
+    "director": "Lana and Lilly Wachowski",
+    "descriptions": [
+      "A hacker learns that the everyday world is a computer simulation and real humans sleep in pods run by machines. He is offered a choice: the blue pill or the red pill.",
+      "An office programmer spends his nights searching for an answer to a question he cannot put into words. Bullets freeze in midair."
+    ]
+  },
+  "titanic": {
+    "title": "Titanic",
+    "aliases": [],
+    "director": "James Cameron",
+    "descriptions": [
+      "A poor artist wins a ticket on a luxury liner in a poker game and falls for a high-society girl. In April 1912 the ship hits an iceberg.",
+      "An elderly woman tells treasure hunters about a love story that lasted only a few days and ended in icy water."
+    ]
+  },
+  "inception": {
+    "title": "Inception",
+    "aliases": [],
+    "director": "Christopher Nolan",
+    "descriptions": [
+      "A professional thief steals secrets from dreams. His new job is not to steal an idea but to plant one, going into a dream within a dream within a dream. The top on the table keeps spinning.",
+      "A city folds in half and gravity goes mad. The real question is whether what you see is real."
+    ]
+  },
+  "godfather": {
+    "title": "The Godfather",
+    "aliases": [
+      "Godfather"
+    ],
+    "director": "Francis Ford Coppola",
+    "descriptions": [
+      "The aging head of an Italian-American mafia family loses his grip, and power unexpectedly passes to his youngest son — a war hero who wanted nothing to do with the family business. A horse's head in a bed.",
+      "An offer you can't refuse. A saga of a family where loyalty and crime cannot be separated."
+    ]
+  },
+  "pulp_fiction": {
+    "title": "Pulp Fiction",
+    "aliases": [],
+    "director": "Quentin Tarantino",
+    "descriptions": [
+      "Two hitmen discuss what burgers are called in France, the boss's wife dances the twist, a boxer runs off with the money and something glows inside a briefcase. The stories are shuffled in time.",
+      "Several Los Angeles tales of gangsters, robbers and pure chance, told out of order."
+    ]
+  },
+  "spirited_away": {
+    "title": "Spirited Away",
+    "aliases": [],
+    "director": "Hayao Miyazaki",
+    "descriptions": [
+      "A ten-year-old girl wanders into the spirit world, where her parents have turned into pigs. To save them, she takes a job at a witch's magical bathhouse and starts forgetting her own name.",
+      "A Japanese anime about growing up in a world where a faceless spirit eats gold and a train runs across the water."
+    ]
+  },
+  "home_alone": {
+    "title": "Home Alone",
+    "aliases": [],
+    "director": "Chris Columbus",
+    "descriptions": [
+      "A big family flies to Paris for Christmas and forgets their eight-year-old son. The boy turns the house into an obstacle course for two hapless burglars.",
+      "A kid who wished his relatives would disappear gets his wish and learns he misses them. Traps, an iron and paint cans."
+    ]
+  },
+  "ivan_vasilievich": {
+    "title": "Ivan Vasilievich Changes Profession",
+    "aliases": [
+      "Ivan Vasilievich: Back to the Future"
+    ],
+    "director": "Leonid Gaidai",
+    "descriptions": [
+      "An inventor builds a time machine: a fearsome 16th-century tsar lands in a Moscow apartment, while a building manager and a burglar end up in the tsar's palace.",
+      "A Soviet comedy based on a Bulgakov play: an autocrat is terrified of a car, and a timid official receives foreign ambassadors."
+    ]
+  },
+  "diamond_arm": {
+    "title": "The Diamond Arm",
+    "aliases": [],
+    "director": "Leonid Gaidai",
+    "descriptions": [
+      "A modest economist returns from a cruise, and smugglers mistakenly hide gold in the plaster cast he wears after a fall. Now the gang is desperate to get the cargo back.",
+      "A Soviet citizen on a sea voyage accidentally becomes a courier for criminals and helps the police catch them."
+    ]
+  },
+  "irony_fate": {
+    "title": "The Irony of Fate",
+    "aliases": [
+      "The Irony of Fate, or Enjoy Your Bath!"
+    ],
+    "director": "Eldar Ryazanov",
+    "descriptions": [
+      "After a bathhouse visit with friends on December 31, a Moscow surgeon mistakenly flies to Leningrad. There he finds the same street, the same building and a key that opens a stranger's apartment.",
+      "A New Year's story about how identical apartment blocks and pure chance can sometimes lead to love."
+    ]
+  },
+  "operation_y": {
+    "title": "Operation Y and Other Shurik's Adventures",
+    "aliases": [
+      "Operation Y"
+    ],
+    "director": "Leonid Gaidai",
+    "descriptions": [
+      "Three short stories about a bespectacled student: he re-educates a bully at a construction site, studies for an exam with a girl and guards a warehouse targeted by three comic crooks.",
+      "A Soviet comedy about a polite student who keeps landing in absurd situations."
+    ]
+  },
+  "brother": {
+    "title": "Brother",
+    "aliases": [
+      "Brat"
+    ],
+    "director": "Aleksei Balabanov",
+    "descriptions": [
+      "A young man fresh out of the army comes to St. Petersburg to join his older sibling, a hitman, and soon starts shooting himself. He loves the rock band Nautilus Pompilius and believes strength lies in truth.",
+      "The 1990s. A quiet young veteran finds his place in a criminal city."
+    ]
+  },
+  "moscow_tears": {
+    "title": "Moscow Does Not Believe in Tears",
+    "aliases": [],
+    "director": "Vladimir Menshov",
+    "descriptions": [
+      "Three girls from the provinces come to the capital in the 1950s seeking happiness. Twenty years later, one of them, a single mother, runs a factory and meets a mechanic on a commuter train.",
+      "An Oscar-winning Soviet melodrama about success and loneliness. Life begins at forty."
+    ]
+  },
+  "gentlemen_fortune": {
+    "title": "Gentlemen of Fortune",
+    "aliases": [],
+    "director": "Aleksandr Seryy",
+    "descriptions": [
+      "A kindergarten director is the spitting image of a dangerous thief. The police send him to a prison camp to find out from the gang where Alexander the Great's helmet is hidden.",
+      "A kind teacher re-educates hardened criminals as if they were children."
+    ]
+  },
+  "white_sun": {
+    "title": "White Sun of the Desert",
+    "aliases": [],
+    "director": "Vladimir Motyl",
+    "descriptions": [
+      "A Red Army soldier crossing Central Asia on his way home after the Civil War is forced to guard a bandit's harem. A customs officer refuses bribes because he feels for his country.",
+      "A Soviet \"Eastern\" that cosmonauts traditionally watch before a launch. The East is a delicate matter."
+    ]
+  },
+  "meeting_place": {
+    "title": "The Meeting Place Cannot Be Changed",
+    "aliases": [],
+    "director": "Stanislav Govorukhin",
+    "descriptions": [
+      "Post-war Moscow. A seasoned police captain and a young frontline veteran hunt down the Black Cat gang. A thief belongs in prison!",
+      "A miniseries about two detectives who disagree on whether it's fine to plant evidence when the suspect is surely guilty."
+    ]
+  },
+  "office_romance": {
+    "title": "Office Romance",
+    "aliases": [],
+    "director": "Eldar Ryazanov",
+    "descriptions": [
+      "To get a promotion, a timid economist with two kids starts courting the stern head of a statistics bureau, whom her staff secretly mock.",
+      "A Soviet comedy about how a career woman with no private life and a quiet clerk find each other."
+    ]
+  },
+  "dawns_quiet": {
+    "title": "The Dawns Here Are Quiet",
+    "aliases": [],
+    "director": "Stanislav Rostotsky",
+    "descriptions": [
+      "1942, Karelia. A sergeant major and five young anti-aircraft gunners head into the forest to stop sixteen German saboteurs.",
+      "A war drama based on Boris Vasilyev's novella about young women who had to fight instead of living."
+    ]
+  },
+  "stalker": {
+    "title": "Stalker",
+    "aliases": [],
+    "director": "Andrei Tarkovsky",
+    "descriptions": [
+      "A guide leads a Writer and a Professor through the forbidden Zone to a Room that grants one's innermost wishes. They test the path by throwing metal nuts.",
+      "A slow parable about faith and desire, loosely based on the Strugatsky brothers' Roadside Picnic."
+    ]
+  },
+  "heart_dog": {
+    "title": "Heart of a Dog",
+    "aliases": [],
+    "director": "Vladimir Bortko",
+    "descriptions": [
+      "A professor transplants a dead drunkard's organs into a stray mutt, and the animal becomes a man — rude, thieving and very ideological. Never read Soviet newspapers before dinner!",
+      "A black-and-white Bulgakov adaptation about a scientific experiment on nature and on society."
+    ]
+  },
+  "hachiko": {
+    "title": "Hachi: A Dog's Tale",
+    "aliases": [
+      "Hachiko",
+      "Hachi"
+    ],
+    "director": "Lasse Hallström",
+    "descriptions": [
+      "A professor finds an Akita puppy at a train station and takes him home. The loyal Akita meets his owner off the train every day and keeps coming to the station for years.",
+      "An American remake of a Japanese story about loyalty stronger than time."
+    ]
+  },
+  "prestige": {
+    "title": "The Prestige",
+    "aliases": [],
+    "director": "Christopher Nolan",
+    "descriptions": [
+      "Two magicians in Victorian London compete for years, each trying to crack the secret of the Transported Man trick. One of them turns to Nikola Tesla.",
+      "Every magic trick has three acts. The last one is worth sacrificing everything for."
+    ]
+  },
+  "shutter_island": {
+    "title": "Shutter Island",
+    "aliases": [],
+    "director": "Martin Scorsese",
+    "descriptions": [
+      "1954. Two U.S. marshals arrive at a psychiatric hospital off the Massachusetts coast to investigate a missing patient. A storm hits, cutting them off from the mainland.",
+      "A detective who grows less sure of his own memory the closer he gets to the truth."
+    ]
+  },
+  "gladiator": {
+    "title": "Gladiator",
+    "aliases": [],
+    "director": "Ridley Scott",
+    "descriptions": [
+      "A Roman general refuses to serve the new emperor, who murdered his own father. His family is executed, and he is sold into slavery and forced to fight in the Colosseum.",
+      "A general became a slave, a slave became a fighter, and the fighter defied an emperor. What we do in life echoes in eternity."
+    ]
+  },
+  "lotr_return": {
+    "title": "The Lord of the Rings: The Return of the King",
+    "aliases": [
+      "The Return of the King"
+    ],
+    "director": "Peter Jackson",
+    "descriptions": [
+      "Two hobbits make their way through Mordor to Mount Doom, while their friends defend Minas Tirith and lead an army of the dead. The trilogy finale that won 11 Oscars.",
+      "The last chapter of an epic saga: the heir to the throne accepts the crown, and a small hero carries a heavy burden to the end."
+    ]
+  },
+  "harry_potter_1": {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "aliases": [
+      "Harry Potter and the Sorcerer's Stone"
+    ],
+    "director": "Chris Columbus",
+    "descriptions": [
+      "An orphan lives in a cupboard under the stairs until, on his eleventh birthday, he learns he is a wizard. Platform nine and three-quarters leads to a school of magic.",
+      "First year at a castle where staircases move, portraits talk and chess can be deadly."
+    ]
+  },
+  "terminator2": {
+    "title": "Terminator 2: Judgment Day",
+    "aliases": [
+      "Terminator 2",
+      "T2"
+    ],
+    "director": "James Cameron",
+    "descriptions": [
+      "A cyborg that once hunted the mother of the future resistance leader now protects her teenage son from a new model made of liquid metal. Hasta la vista, baby!",
+      "The future is not set. A machine learns why humans cry."
+    ]
+  },
+  "silence_lambs": {
+    "title": "The Silence of the Lambs",
+    "aliases": [],
+    "director": "Jonathan Demme",
+    "descriptions": [
+      "An FBI trainee asks an imprisoned cannibal psychiatrist to help catch a serial killer. In return, he wants her to tell him about her childhood.",
+      "A thriller in which the scariest conversation takes place through the glass of a cell. One of the few films to win all five top Oscars."
+    ]
+  },
+  "amelie": {
+    "title": "Amélie",
+    "aliases": [
+      "Amelie"
+    ],
+    "director": "Jean-Pierre Jeunet",
+    "descriptions": [
+      "A shy waitress from Montmartre finds a box of childhood treasures hidden in her apartment wall and decides to secretly make other people's lives better. A garden gnome travels the world.",
+      "A French fairy tale about a young woman who arranges everyone else's happiness but fears her own."
+    ]
+  },
+  "pianist": {
+    "title": "The Pianist",
+    "aliases": [],
+    "director": "Roman Polanski",
+    "descriptions": [
+      "A famous Polish-Jewish musician survives in occupied Warsaw, hiding in abandoned buildings. One day a German officer finds him.",
+      "The true story of a man saved by music when his whole world vanished."
+    ]
+  },
+  "catch_me": {
+    "title": "Catch Me If You Can",
+    "aliases": [],
+    "director": "Steven Spielberg",
+    "descriptions": [
+      "In the 1960s a teenager poses as an airline pilot, a doctor and a lawyer while forging millions of dollars in checks. An FBI agent spends years on his trail.",
+      "A cat-and-mouse game between a charming con man and a stubborn investigator, based on real events."
+    ]
+  },
+  "wall_e": {
+    "title": "WALL·E",
+    "aliases": [
+      "WALL-E",
+      "Walle"
+    ],
+    "director": "Andrew Stanton",
+    "descriptions": [
+      "A small trash-compacting robot has been cleaning an abandoned Earth for centuries, until he meets a sleek white probe robot. For her, he travels into space.",
+      "Almost wordless: a love story between two machines and about people who forgot how to walk."
+    ]
+  },
+  "up": {
+    "title": "Up",
+    "aliases": [],
+    "director": "Pete Docter",
+    "descriptions": [
+      "An elderly widower ties thousands of balloons to his house and floats off to South America, not noticing a young scout on his porch.",
+      "An animated film whose first ten minutes tell an entire life. Then come talking dogs and a rare bird."
+    ]
+  },
+  "coco": {
+    "title": "Coco",
+    "aliases": [],
+    "director": "Lee Unkrich",
+    "descriptions": [
+      "A Mexican boy dreams of becoming a musician, though music is banned in his family. On the Day of the Dead he enters the colorful land of his ancestors.",
+      "An animated film about memory: as long as you are remembered, you exist. Remember me."
+    ]
+  },
+  "howl": {
+    "title": "Howl's Moving Castle",
+    "aliases": [],
+    "director": "Hayao Miyazaki",
+    "descriptions": [
+      "The Witch of the Waste turns a young hatter into an old woman. She finds shelter in the walking home of a vain wizard, where a fire demon lives.",
+      "An anime about war, curses and love, based on a novel by Diana Wynne Jones."
+    ]
+  },
+  "joker": {
+    "title": "Joker",
+    "aliases": [],
+    "director": "Todd Phillips",
+    "descriptions": [
+      "A failed comedian with a nervous laugh works as a party clown in Gotham and lives with his sick mother. The city slowly drives him to madness. A dance on the stairs.",
+      "The origin story of the most famous comic-book villain, told as a social drama."
+    ]
+  },
+  "parasite": {
+    "title": "Parasite",
+    "aliases": [],
+    "director": "Bong Joon-ho",
+    "descriptions": [
+      "A poor Korean family from a semi-basement flat, one by one, gets hired by a rich household: as a tutor, an art therapist, a driver and a housekeeper. The house has a secret of its own.",
+      "The first non-English-language film to win the Oscar for Best Picture. About stairs, smells and social class."
+    ]
+  },
+  "green_book": {
+    "title": "Green Book",
+    "aliases": [],
+    "director": "Peter Farrelly",
+    "descriptions": [
+      "1962. A bouncer from the Bronx is hired to drive a Black piano virtuoso on a concert tour of the Deep South. They carry a travel guide for Black motorists.",
+      "A road comedy about the friendship of two very different men, fried chicken and dignity."
+    ]
+  },
+  "truman": {
+    "title": "The Truman Show",
+    "aliases": [],
+    "director": "Peter Weir",
+    "descriptions": [
+      "An insurance salesman doesn't know he has lived inside a giant studio since birth and that his life is broadcast around the clock. A spotlight falls from the sky.",
+      "In case I don't see ya: good afternoon, good evening and good night. A man who wanted to see the edge of his world."
+    ]
+  },
+  "twelve_angry": {
+    "title": "12 Angry Men",
+    "aliases": [
+      "Twelve Angry Men"
+    ],
+    "director": "Sidney Lumet",
+    "descriptions": [
+      "Jurors decide the fate of a teenager accused of killing his father. Eleven are sure he is guilty, and only one has doubts. Almost the whole film takes place in one stuffy room.",
+      "A black-and-white drama about reasonable doubt proving stronger than prejudice."
+    ]
+  }
+}
