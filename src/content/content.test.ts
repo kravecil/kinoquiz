@@ -9,7 +9,7 @@ describe('контент', () => {
   for (const lang of LANGUAGES) {
     it(`[${lang.code}] все фильмы загружаются, марафон проходится до конца`, async () => {
       const films = await loadFilms(lang.code);
-      expect(films.length).toBeGreaterThanOrEqual(50);
+      expect(films.length).toBeGreaterThanOrEqual(200);
 
       const run = new MarathonRun(films, createRng(123), defaultConfig, new Set());
       let snap = run.start(0);

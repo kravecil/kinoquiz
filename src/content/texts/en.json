@@ -1639,5 +1639,236 @@
       "A repeat offender gets out of prison and goes to a village to meet the woman he has been writing to. He tries to start an honest life, but his old gang won't let him go.",
       "Birch trees he embraces and a celebration that never happens. Vasily Shukshin's last film as director."
     ]
+  },
+  "oppenheimer": {
+    "title": "Oppenheimer",
+    "aliases": [],
+    "director": "Christopher Nolan",
+    "descriptions": [
+      "A theoretical physicist leads a secret project in the New Mexico desert to build the first atomic bomb, and years later faces a humiliating security clearance hearing.",
+      "Now I am become Death, the destroyer of worlds. A three-hour biopic that won seven Oscars."
+    ]
+  },
+  "dune": {
+    "title": "Dune",
+    "aliases": [],
+    "director": "Denis Villeneuve",
+    "descriptions": [
+      "The heir of a noble house moves with his family to the desert planet Arrakis, the only source of the precious spice. Soon they are betrayed, and the young man must hide among the free people of the desert.",
+      "Fear is the mind-killer. Giant worms beneath the sand and an adaptation of Frank Herbert's novel."
+    ]
+  },
+  "arrival": {
+    "title": "Arrival",
+    "aliases": [],
+    "director": "Denis Villeneuve",
+    "descriptions": [
+      "Twelve shell-shaped alien ships hover over Earth. A linguist is brought in to decipher the language of the visitors, who write in circles of inky smoke.",
+      "A film about a language that changes how you perceive time. What would you choose if you knew how it all ends?"
+    ]
+  },
+  "top_gun_maverick": {
+    "title": "Top Gun: Maverick",
+    "aliases": [],
+    "director": "Joseph Kosinski",
+    "descriptions": [
+      "A test pilot who in thirty years of service never made admiral returns to an elite flight school to train young aces for a near-impossible mission. Among them is the son of his late wingman.",
+      "A sequel to a 1986 cult hit, shot with real fighter jets instead of computer graphics."
+    ]
+  },
+  "sixth_sense": {
+    "title": "The Sixth Sense",
+    "aliases": [],
+    "director": "M. Night Shyamalan",
+    "descriptions": [
+      "A child psychologist tries to help a withdrawn eight-year-old boy who confesses that he sees dead people. They walk among the living and don't know they are dead.",
+      "A film whose ending makes you want to watch it again. When it's cold, someone is near."
+    ]
+  },
+  "night_museum": {
+    "title": "Night at the Museum",
+    "aliases": [],
+    "director": "Shawn Levy",
+    "descriptions": [
+      "A loser takes a job as a guard at New York's natural history halls and discovers the exhibits come alive after sunset: a T. rex skeleton plays fetch and Teddy Roosevelt rides a horse.",
+      "An ancient Egyptian tablet, miniature cowboys and a capuchin monkey who steals keys."
+    ]
+  },
+  "braveheart": {
+    "title": "Braveheart",
+    "aliases": [],
+    "director": "Mel Gibson",
+    "descriptions": [
+      "13th century. A Scottish commoner whose wife was killed by English soldiers leads a rebellion against King Edward Longshanks. Faces painted blue and kilts.",
+      "They may take our lives, but they'll never take our freedom! Five Oscars for a director who also starred."
+    ]
+  },
+  "the_revenant": {
+    "title": "The Revenant",
+    "aliases": [],
+    "director": "Alejandro G. Iñárritu",
+    "descriptions": [
+      "1823, the American wilderness. A fur trapper is mauled by a bear, and his companions leave him for dead after killing his son. He crawls hundreds of miles through the snow for revenge.",
+      "The film that finally won Leonardo DiCaprio his Oscar. Shot using only natural light."
+    ]
+  },
+  "the_mummy": {
+    "title": "The Mummy",
+    "aliases": [],
+    "director": "Stephen Sommers",
+    "descriptions": [
+      "1926. An adventurer, a librarian and her hapless brother find a lost city of the dead in the Egyptian desert and accidentally awaken a cursed priest who unleashes the plagues of Egypt.",
+      "Scarabs under the skin, a sandstorm with a face and the Book of the Dead. Adventure in the spirit of old horror films."
+    ]
+  },
+  "oldboy": {
+    "title": "Oldboy",
+    "aliases": [],
+    "director": "Park Chan-wook",
+    "descriptions": [
+      "A man is kidnapped and kept locked in a room with a TV for fifteen years with no explanation. Suddenly released, he hunts for his captor and has only five days.",
+      "A hallway fight filmed in a single take and a live octopus for lunch. Grand Prix at Cannes."
+    ]
+  },
+  "three_idiots": {
+    "title": "3 Idiots",
+    "aliases": [
+      "Three Idiots"
+    ],
+    "director": "Rajkumar Hirani",
+    "descriptions": [
+      "Two friends search for a classmate who vanished after graduating from an elite engineering college. Remembering their studies, they realize he taught them to think, not cram. All is well!",
+      "An Indian comedy about the education system, featuring a baby delivered with a vacuum cleaner."
+    ]
+  },
+  "spider_man": {
+    "title": "Spider-Man",
+    "aliases": [],
+    "director": "Sam Raimi",
+    "descriptions": [
+      "A New York high schooler is bitten by a genetically modified insect and gains strength and the ability to climb walls. He battles the Green Goblin and secretly loves the girl next door.",
+      "With great power comes great responsibility. An upside-down kiss in the rain."
+    ]
+  },
+  "iron_man": {
+    "title": "Iron Man",
+    "aliases": [],
+    "director": "Jon Favreau",
+    "descriptions": [
+      "A genius billionaire arms dealer is captured in Afghanistan and builds an armored suit in a cave to escape. Back home, he builds an improved version.",
+      "The film that launched a huge comic-book cinematic universe. A hero's confession at a press conference."
+    ]
+  },
+  "fast_furious": {
+    "title": "The Fast and the Furious",
+    "aliases": [],
+    "director": "Rob Cohen",
+    "descriptions": [
+      "An undercover cop infiltrates the Los Angeles street racing scene to find a gang hijacking trucks on the move, and grows close to its charismatic leader.",
+      "Nitrous oxide, a quarter mile at a time and family above all. The start of a billion-dollar franchise."
+    ]
+  },
+  "john_wick": {
+    "title": "John Wick",
+    "aliases": [],
+    "director": "Chad Stahelski",
+    "descriptions": [
+      "A retired hitman who has just buried his wife comes out of retirement when a Russian mobster's son steals his car and kills his puppy, the last gift from his wife.",
+      "A hotel for assassins who pay in gold coins and gunfights choreographed like ballet. They call him the Boogeyman."
+    ]
+  },
+  "deadpool": {
+    "title": "Deadpool",
+    "aliases": [],
+    "director": "Tim Miller",
+    "descriptions": [
+      "A wisecracking mercenary with cancer agrees to an experiment that makes him unkillable but disfigured. In a red suit he hunts the man responsible, constantly talking to the audience.",
+      "A superhero movie that mocks superhero movies. Chimichangas and the fourth wall."
+    ]
+  },
+  "rocky": {
+    "title": "Rocky",
+    "aliases": [],
+    "director": "John G. Avildsen",
+    "descriptions": [
+      "An unknown Philadelphia boxer who collects debts on the side gets a shot at the world champion. He trains by punching frozen beef carcasses and running up the steps of an art museum.",
+      "What matters is going the distance. A script its unknown author refused to sell unless he played the lead."
+    ]
+  },
+  "dirty_dancing": {
+    "title": "Dirty Dancing",
+    "aliases": [],
+    "director": "Emile Ardolino",
+    "descriptions": [
+      "Summer 1963. A doctor's daughter at a family resort falls for a working-class dance instructor and stands in for his partner at an important show. Rehearsals in a lake.",
+      "A lift that finally works in the finale, to (I've Had) The Time of My Life."
+    ]
+  },
+  "martian": {
+    "title": "The Martian",
+    "aliases": [],
+    "director": "Ridley Scott",
+    "descriptions": [
+      "During a dust storm the crew believes their botanist is dead and leaves. Alone on the red planet, he grows potatoes with his own fertilizer and waits for rescue.",
+      "I'm going to have to science the hell out of this. Robinson Crusoe in a spacesuit with the commander's disco playlist."
+    ]
+  },
+  "love_actually": {
+    "title": "Love Actually",
+    "aliases": [],
+    "director": "Richard Curtis",
+    "descriptions": [
+      "Ten intertwined stories in London in the five weeks before Christmas: a prime minister, a writer, an ageing rock star and a boy who learns the drums to impress a girl.",
+      "A confession on cue cards at a front door to the sound of carols. The most British of Christmas comedies."
+    ]
+  },
+  "the_hobbit": {
+    "title": "The Hobbit: An Unexpected Journey",
+    "aliases": [
+      "The Hobbit"
+    ],
+    "director": "Peter Jackson",
+    "descriptions": [
+      "A homebody from a cozy hole in the Shire sets off with a wizard and thirteen dwarves to reclaim their mountain kingdom from a dragon. In a dark cave he plays riddles and finds a ring.",
+      "Sixty years before the great war for Middle-earth. Smashed crockery and a song about the Misty Mountains."
+    ]
+  },
+  "narnia": {
+    "title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+    "aliases": [
+      "The Chronicles of Narnia"
+    ],
+    "director": "Andrew Adamson",
+    "descriptions": [
+      "Four children evacuated from the London Blitz find a door in a country house leading to a snowbound land where it's always winter and never Christmas. Talking animals await a prophecy.",
+      "A lamppost in the middle of a forest and Turkish delight worth betraying for. A C. S. Lewis adaptation."
+    ]
+  },
+  "hunger_games": {
+    "title": "The Hunger Games",
+    "aliases": [],
+    "director": "Gary Ross",
+    "descriptions": [
+      "In a dystopian nation, teenagers from poor districts are chosen by lottery every year for a televised fight to the death. A sixteen-year-old archer volunteers in place of her younger sister.",
+      "A mockingjay pin and a three-finger salute of defiance. May the odds be ever in your favor."
+    ]
+  },
+  "whiplash": {
+    "title": "Whiplash",
+    "aliases": [],
+    "director": "Damien Chazelle",
+    "descriptions": [
+      "A young drummer enrolls at New York's top music conservatory and joins the jazz band of a brutal instructor who throws chairs at students in pursuit of perfection.",
+      "Not quite my tempo! A psychological duel between teacher and student, ending in a ten-minute drum solo."
+    ]
+  },
+  "la_la_land": {
+    "title": "La La Land",
+    "aliases": [],
+    "director": "Damien Chazelle",
+    "descriptions": [
+      "An aspiring actress and a stubborn jazz pianist meet in a Los Angeles freeway traffic jam and fall in love. Their Hollywood dreams start getting in the way of their romance.",
+      "Here's to the ones who dream. A musical with a tap dance at sunset and an alternate life in the finale."
+    ]
   }
 }
