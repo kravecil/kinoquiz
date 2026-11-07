@@ -58,7 +58,7 @@ export async function processPendingPurchases(): Promise<void> {
       continue;
     }
     if (!already) applyGrant(def, p.token);
-    await flushSave();
+    await flushSave({ force: true });
     try {
       await platform().payments.consume(p.token);
     } catch (err) {
@@ -81,7 +81,7 @@ export async function buy(productId: string): Promise<boolean> {
   if (!purchase) return false;
 
   applyGrant(def, purchase.token);
-  await flushSave();
+  await flushSave({ force: true });
   if (!def.permanent) {
     try {
       await platform().payments.consume(purchase.token);

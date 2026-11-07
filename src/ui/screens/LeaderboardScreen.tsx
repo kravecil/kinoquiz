@@ -59,6 +59,7 @@ export function LeaderboardScreen() {
 }
 
 function Row({ entry }: { entry: LeaderboardEntry }) {
+  const name = entry.name.trim() || t('lb.hidden');
   return (
     <li class={`board__row${entry.isPlayer ? ' is-player' : ''}${entry.rank <= 3 ? ` is-top is-top-${entry.rank}` : ''}`}>
       <span class="board__rank">{entry.rank}</span>
@@ -66,10 +67,10 @@ function Row({ entry }: { entry: LeaderboardEntry }) {
         <img class="board__avatar" src={entry.avatar} alt="" />
       ) : (
         <span class="board__avatar board__avatar--empty" aria-hidden="true">
-          {entry.name.slice(0, 1)}
+          {name.slice(0, 1)}
         </span>
       )}
-      <span class="board__name">{entry.isPlayer ? `${entry.name} (${t('lb.you')})` : entry.name}</span>
+      <span class="board__name">{entry.isPlayer ? `${name} (${t('lb.you')})` : name}</span>
       <span class="board__score">{formatNumber(entry.score)}</span>
     </li>
   );

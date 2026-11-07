@@ -114,6 +114,7 @@ const en: Dictionary = {
   'lb.notRanked': 'Play a show to get on the leaderboard',
   'lb.loginPrompt': 'Sign in to join the leaderboard',
   'lb.login': 'Sign in',
+  'lb.hidden': 'Hidden viewer',
   'lb.error': 'Could not load the leaderboard',
 
   'settings.title': 'Settings',

@@ -7,7 +7,7 @@ import { config, now, platform, save } from './app';
  */
 
 const LOCAL_KEY = 'kinoquiz.save';
-const CLOUD_DELAY_MS = 1500;
+const CLOUD_DELAY_MS = 2000;
 
 let cloudTimer: ReturnType<typeof setTimeout> | null = null;
 
@@ -57,24 +57,53 @@ export function updateSave(mutate: (draft: SaveData) => SaveData | void): SaveDa
   return result;
 }
 
+/**
+ * Облако площадки ограничивает частоту записи (у Яндекса — 100 запросов за 5 минут),
+ * поэтому обычные изменения копим и пишем не чаще раза в CLOUD_MIN_INTERVAL_MS.
+ */
+const CLOUD_MIN_INTERVAL_MS = 5000;
+let lastCloudAt = 0;
+let cloudDirty = false;
+
 function scheduleCloud(): void {
-  if (cloudTimer) clearTimeout(cloudTimer);
-  cloudTimer = setTimeout(() => void flushSave(), CLOUD_DELAY_MS);
+  cloudDirty = true;
+  if (cloudTimer) return;
+  const wait = Math.max(CLOUD_DELAY_MS, lastCloudAt + CLOUD_MIN_INTERVAL_MS - Date.now());
+  cloudTimer = setTimeout(() => {
+    cloudTimer = null;
+    void writeCloud();
+  }, wait);
 }
 
-/** Немедленная запись в облако (после покупок и в конце забега). */
-export async function flushSave(): Promise<void> {
+async function writeCloud(): Promise<void> {
+  const data = save.value;
+  if (!data) return;
+  cloudDirty = false;
+  lastCloudAt = Date.now();
+  try {
+    await platform().storage.save(data);
+  } catch (err) {
+    cloudDirty = true;
+    console.warn('[save] облако недоступно', err);
+  }
+}
+
+/**
+ * Запись в облако без ожидания.
+ * `force` — сразу, даже если недавно уже писали (только для покупок: они редкие и важные).
+ * Без `force` — сразу, если лимит позволяет, иначе в ближайшее разрешённое время.
+ */
+export async function flushSave(options: { force?: boolean } = {}): Promise<void> {
+  if (!cloudDirty && !options.force) return;
+  if (!options.force && Date.now() - lastCloudAt < CLOUD_MIN_INTERVAL_MS) {
+    scheduleCloud();
+    return;
+  }
   if (cloudTimer) {
     clearTimeout(cloudTimer);
     cloudTimer = null;
   }
-  const data = save.value;
-  if (!data) return;
-  try {
-    await platform().storage.save(data);
-  } catch (err) {
-    console.warn('[save] облако недоступно', err);
-  }
+  await writeCloud();
 }
 
 /** При уходе со страницы пытаемся дописать облачное сохранение. */

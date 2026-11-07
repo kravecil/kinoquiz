@@ -7,13 +7,17 @@ import { claimDailyBonus } from './economy';
 import { installSaveOnHide, loadSave, updateSave } from './persistence';
 import { loadCatalog, processPendingPurchases } from './shop';
 import { refreshAuth } from './leaderboard';
+import { onPlatformPause } from './run';
 
 /** Порядок запуска: площадка → сохранение → язык и контент → покупки → готово. */
 export async function boot(): Promise<void> {
   const p = createPlatform();
   setPlatform(p);
   await p.init();
-  p.onPause((paused) => setPlatformPaused(paused));
+  p.onPause((paused) => {
+    setPlatformPaused(paused);
+    onPlatformPause(paused);
+  });
 
   const data = await loadSave();
   setSoundEnabled(data.settings.sound);

@@ -212,6 +212,20 @@ describe('MarathonRun', () => {
     expect(snap.question!.film.id).not.toBe(first.question!.film.id);
   });
 
+  it('время на паузе не уменьшает бонус за скорость', () => {
+    const a = run(21);
+    const qa = a.start(0).question!;
+    const fast = a.answer(qa.film.id, 1000);
+
+    const b = run(21);
+    const qb = b.start(0).question!;
+    b.addPausedTime(30_000);
+    const paused = b.answer(qb.film.id, 31_000);
+
+    expect(fast.kind === 'correct' && paused.kind === 'correct').toBe(true);
+    if (fast.kind === 'correct' && paused.kind === 'correct') expect(paused.points).toBe(fast.points);
+  });
+
   it('продолжение доступно ограниченное число раз', () => {
     const r = run();
     expect(r.canRevive()).toBe(true);

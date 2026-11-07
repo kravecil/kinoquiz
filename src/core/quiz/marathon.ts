@@ -157,6 +157,11 @@ export class MarathonRun {
     return { type };
   }
 
+  /** Время на паузе (реклама площадки, скрытая вкладка) не засчитывается во время ответа. */
+  addPausedTime(ms: number): void {
+    if (this.phase === 'question' && ms > 0) this.questionShownAt += ms;
+  }
+
   /** Продолжение после того, как закончились билеты (за рекламу). */
   canRevive(): boolean {
     return this.revivesUsed < this.cfg.marathon.revivesPerRun;

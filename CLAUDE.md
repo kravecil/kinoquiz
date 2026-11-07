@@ -6,13 +6,15 @@
 
 - TypeScript (strict, `noUncheckedIndexedAccess`), Preact 11 + `@preact/signals`, Vite, Vitest. Своего сервера нет.
 - `npm run dev` — игра на localhost:5173 с заглушкой площадки (`?fast=1`, `?lang=en`, `?auth=0`, `?ads=fail`).
-- `npm test` — тесты. `npm run check` — типы и контент. `npm run build` — check + сборка в `dist/`.
+- `npm test` — тесты. `npm run check` — типы и контент.
+- `npm run build` — сборка для Яндекс Игр (с `/sdk.js`, `YandexPlatform`). `npm run pack` — то же + zip для консоли. `npm run build:standalone` — сборка с заглушкой.
+- Площадка выбирается при сборке через `VITE_PLATFORM` (`.env.*`). В боевой сборке не должно быть кода `LocalPlatform` (проверка: в `dist/assets/*.js` нет строки `MOCK`).
 - Перед каждым коммитом: `npm run check && npm test`. Оба должны проходить.
 
 ## Архитектура
 
 - `src/core/` — чистая логика: никаких DOM, `window`, SDK и сигналов. Время передаётся параметром. Любая новая логика здесь — с тестом в `*.test.ts`.
-- `src/platform/` — всё общение с площадкой только через `IPlatform` (`types.ts`). Код вне `platform/` не обращается к `YaGames`/`ysdk` напрямую.
+- `src/platform/` — всё общение с площадкой только через `IPlatform` (`types.ts`). Код вне `platform/` не обращается к `YaGames`/`ysdk` напрямую. `YandexPlatform` получает SDK через конструктор и тестируется на подставном SDK (`YandexPlatform.test.ts`); типы SDK — `@types/ysdk`.
 - `src/state/` — сигналы и действия, связывают core, платформу и UI. Сохранение меняется только через `updateSave()`.
 - `src/ui/` — компоненты Preact, без бизнес-логики.
 - Баланс (цены, таймеры, очки) — только в `src/core/config.ts`. Товары — в `src/core/products.ts`, их id совпадают с консолью Яндекс Игр.
@@ -24,6 +26,8 @@
 - Полноэкранная реклама — только между сеансами, не во время вопроса. Звук выключается во время рекламы и при скрытой вкладке.
 - GameplayAPI start/stop вокруг активной игры; `LoadingAPI.ready()` — когда игра готова.
 - Никаких внешних ссылок и внешних запросов: шрифты и ресурсы — только из бандла.
+- Лимиты SDK: `player.setData` — 100 запросов за 5 минут (облако пишем не чаще раза в 5 с, кроме покупок), `leaderboards.setScore` — раз в секунду, `getEntries` — 20 за 5 минут.
+- Перед правкой интеграции сверяться с документацией: https://yandex.ru/dev/games/doc/ru/sdk/sdk-about
 
 ## Контент
 

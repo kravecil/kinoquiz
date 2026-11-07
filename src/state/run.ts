@@ -177,6 +177,19 @@ export async function doubleCoins(): Promise<void> {
   showToast(t('result.doubled'), 'good');
 }
 
+let pausedAt = 0;
+
+/** Пауза от площадки: время ответа на текущий вопрос замирает. */
+export function onPlatformPause(paused: boolean): void {
+  if (!run) return;
+  if (paused) {
+    if (!pausedAt) pausedAt = now();
+  } else if (pausedAt) {
+    run.addPausedTime(now() - pausedAt);
+    pausedAt = 0;
+  }
+}
+
 export function isRunActive(): boolean {
   return run !== null;
 }
