@@ -948,5 +948,234 @@
       "The son of immigrants from Zanzibar, working as a baggage handler at Heathrow, becomes the frontman of a British rock band with operatic ambitions. The climax is 20 minutes of Live Aid at Wembley.",
       "Six minutes with no chorus that nobody wanted on the radio. A biopic of a voice known around the world."
     ]
+  },
+  "toy_story": {
+    "title": "Toy Story",
+    "aliases": [],
+    "director": "John Lasseter",
+    "descriptions": [
+      "A pull-string cowboy, a boy's favorite, grows jealous of a new space ranger with wings and a laser. When the kid isn't looking, everything in the bedroom comes alive.",
+      "The first feature-length film made entirely on computers. To infinity and beyond!"
+    ]
+  },
+  "shrek": {
+    "title": "Shrek",
+    "aliases": [],
+    "director": "Andrew Adamson, Vicky Jenson",
+    "descriptions": [
+      "A green swamp-dwelling hermit strikes a deal with a short lord: he'll rescue a princess from a dragon's castle, and the fairy-tale creatures will be evicted from his land. A chatty donkey tags along.",
+      "Ogres are like onions — they have layers. A fairy tale that makes fun of fairy tales."
+    ]
+  },
+  "finding_nemo": {
+    "title": "Finding Nemo",
+    "aliases": [],
+    "director": "Andrew Stanton",
+    "descriptions": [
+      "A timid clownfish father crosses the ocean to rescue his son, taken by a diver to a dentist's aquarium in Sydney. A fish with short-term memory loss helps him.",
+      "Just keep swimming. Surfing sea turtles and sharks who have sworn off fish."
+    ]
+  },
+  "monsters_inc": {
+    "title": "Monsters, Inc.",
+    "aliases": [],
+    "director": "Pete Docter",
+    "descriptions": [
+      "A furry blue scarer and his one-eyed green partner work at a factory that powers their city with children's screams. One day a little girl slips into their world through a closet door.",
+      "Creatures who are terrified of children. Closet doors leading to bedrooms all over the world."
+    ]
+  },
+  "inside_out": {
+    "title": "Inside Out",
+    "aliases": [],
+    "director": "Pete Docter",
+    "descriptions": [
+      "Five emotions — Joy, Sadness, Anger, Fear and Disgust — run the mind of an eleven-year-old girl who has moved to San Francisco. Two of them get lost in the maze of memory.",
+      "An animated film about why we need sadness. Islands of personality and an imaginary friend made of cotton candy."
+    ]
+  },
+  "ratatouille": {
+    "title": "Ratatouille",
+    "aliases": [],
+    "director": "Brad Bird",
+    "descriptions": [
+      "A rat with a refined nose dreams of becoming a chef and secretly cooks in a Paris restaurant by steering a clumsy kitchen boy, tugging his hair under his toque.",
+      "Anyone can cook. A stern critic and one dish from childhood that melts the ice."
+    ]
+  },
+  "incredibles": {
+    "title": "The Incredibles",
+    "aliases": [],
+    "director": "Brad Bird",
+    "descriptions": [
+      "A former superhero banned from saving the world is bored at an insurance company. A secret mission on an island drags his whole family into adventure: a stretchy wife, an invisible daughter and a speedy son.",
+      "No capes! A spy story about family values and a midlife crisis."
+    ]
+  },
+  "zootopia": {
+    "title": "Zootopia",
+    "aliases": [
+      "Zootropolis"
+    ],
+    "director": "Byron Howard, Rich Moore",
+    "descriptions": [
+      "The first rabbit police officer in a huge city of animals teams up with a sly fox con artist to find missing predators. Sloths run the vehicle registration office.",
+      "A detective story about prejudice told as a cartoon. Anyone can be anything."
+    ]
+  },
+  "frozen": {
+    "title": "Frozen",
+    "aliases": [],
+    "director": "Chris Buck, Jennifer Lee",
+    "descriptions": [
+      "The queen of Arendelle accidentally traps her kingdom in eternal winter and flees to the mountains. Her younger sister follows with an ice harvester, a reindeer and a snowman who loves summer.",
+      "Let it go! A fairy tale where true love isn't a prince's kiss."
+    ]
+  },
+  "how_train_dragon": {
+    "title": "How to Train Your Dragon",
+    "aliases": [],
+    "director": "Dean DeBlois, Chris Sanders",
+    "descriptions": [
+      "The scrawny son of a Viking chief, instead of killing a winged beast, befriends an injured Night Fury. He builds it a prosthetic tail fin and teaches his village to live in peace with fire-breathing neighbors.",
+      "An island where fire-breathing beasts steal sheep. A friendship that begins when nobody kills anybody."
+    ]
+  },
+  "kung_fu_panda": {
+    "title": "Kung Fu Panda",
+    "aliases": [],
+    "director": "Mark Osborne, John Stevenson",
+    "descriptions": [
+      "The chubby son of a noodle shop owner dreams of martial arts and unexpectedly becomes the chosen Dragon Warrior. A tiny red master trains him while five animal fighters look down on him.",
+      "There is no secret ingredient. Dumplings, endless temple steps and a wise old tortoise."
+    ]
+  },
+  "beauty_beast": {
+    "title": "Beauty and the Beast",
+    "aliases": [],
+    "director": "Gary Trousdale, Kirk Wise",
+    "descriptions": [
+      "A bookish girl from a French village agrees to stay in an enchanted castle in place of her father. Its master is a cursed prince, and his servants have become a candlestick, a clock and a teapot.",
+      "A rose under a glass dome is losing its petals. The first animated film nominated for the Best Picture Oscar."
+    ]
+  },
+  "aladdin": {
+    "title": "Aladdin",
+    "aliases": [],
+    "director": "Ron Clements, John Musker",
+    "descriptions": [
+      "A street thief from Agrabah finds a magic lamp, and a fast-talking genie grants him three wishes. To win a princess he poses as a prince, while a scheming vizier wants the lamp for himself.",
+      "A flying carpet and a song about a whole new world. The genie is voiced by Robin Williams."
+    ]
+  },
+  "totoro": {
+    "title": "My Neighbor Totoro",
+    "aliases": [],
+    "director": "Hayao Miyazaki",
+    "descriptions": [
+      "Two sisters and their father move to a country house while their mother is in the hospital. In the forest they meet a huge furry spirit who flies on a spinning top and rides a cat bus.",
+      "Waiting for a bus in the rain with an umbrella for a forest giant. The emblem of Studio Ghibli."
+    ]
+  },
+  "mononoke": {
+    "title": "Princess Mononoke",
+    "aliases": [],
+    "director": "Hayao Miyazaki",
+    "descriptions": [
+      "A young prince cursed by a demon boar travels west and finds himself caught between an ironworks town and the gods of the forest. A girl raised by wolves fights for the forest.",
+      "A war between people and the forest with no villains. A deer god by day and a giant by night."
+    ]
+  },
+  "your_name": {
+    "title": "Your Name",
+    "aliases": [],
+    "director": "Makoto Shinkai",
+    "descriptions": [
+      "A Tokyo schoolboy and a girl from a mountain village start swapping bodies in their sleep. They leave notes on each other's hands until they realize a comet, not just distance, separates them.",
+      "A red cord, twilight and someone you're searching for without remembering why. An anime that broke Japan's box-office records."
+    ]
+  },
+  "hedgehog_fog": {
+    "title": "Hedgehog in the Fog",
+    "aliases": [],
+    "director": "Yuri Norstein",
+    "descriptions": [
+      "A little prickly creature sets off one evening to visit his bear cub friend, count stars and drink tea with raspberry jam. On the way he gets lost in thick white mist and sees a white horse.",
+      "Ten minutes often named the greatest animated film of all time. A white horse in the mist."
+    ]
+  },
+  "bremen_musicians": {
+    "title": "The Bremen Town Musicians",
+    "aliases": [],
+    "director": "Inessa Kovalevskaya",
+    "descriptions": [
+      "A troubadour, a donkey, a dog, a cat and a rooster travel in a wagon giving street shows. The young man falls for a princess and steals her away from the royal castle, while forest robbers get in the way.",
+      "A Soviet animated rock musical loosely based on a Brothers Grimm tale."
+    ]
+  },
+  "prostokvashino": {
+    "title": "Three from Prostokvashino",
+    "aliases": [],
+    "director": "Vladimir Popov",
+    "descriptions": [
+      "A serious city boy moves to the countryside with a talking cat and dog. The village postman brings them parcels, and the cat buys a cow and dreams of a tractor.",
+      "Put the sausage tongue-side down for a tastier sandwich. A Soviet cartoon about freedom based on Eduard Uspensky's story."
+    ]
+  },
+  "winnie_pooh_su": {
+    "title": "Vinni-Pukh",
+    "aliases": [
+      "Winnie-the-Pooh"
+    ],
+    "director": "Fyodor Khitruk",
+    "descriptions": [
+      "A teddy bear with sawdust in his head floats up on a balloon to a hollow tree for honey, then gets stuck in Rabbit's burrow after eating too much.",
+      "A Soviet take on an English classic, with the bear voiced by Yevgeny Leonov."
+    ]
+  },
+  "kid_karlson": {
+    "title": "The Kid and Karlsson",
+    "aliases": [],
+    "director": "Boris Stepantsev",
+    "descriptions": [
+      "A lonely Stockholm boy dreams of a dog, and through his window flies a plump little man with a propeller on his back who loves jam and buns. The strict housekeeper doesn't believe he exists.",
+      "A man in his prime who lives on the roof. A Soviet adaptation of Astrid Lindgren."
+    ]
+  },
+  "snow_queen_su": {
+    "title": "The Snow Queen",
+    "aliases": [],
+    "director": "Lev Atamanov",
+    "descriptions": [
+      "A shard of a magic mirror lodges in a boy's eye and heart, and an icy ruler takes him to her northern palace. His friend follows barefoot, past a sorceress's garden and a robbers' den.",
+      "The word Eternity spelled out in ice. A Soviet Andersen adaptation that inspired Miyazaki."
+    ]
+  },
+  "paddington": {
+    "title": "Paddington",
+    "aliases": [],
+    "director": "Paul King",
+    "descriptions": [
+      "A polite little bear from the Peruvian jungle arrives in London and is taken in by a family who finds him at a railway station. He loves marmalade, and a villainous taxidermist is after him.",
+      "If we're kind and polite, the world will be right. A bear in a blue duffel coat and a red hat."
+    ]
+  },
+  "jumanji": {
+    "title": "Jumanji",
+    "aliases": [],
+    "director": "Joe Johnston",
+    "descriptions": [
+      "Two kids find an old board game with drums in an attic: every roll unleashes lions, monkeys or a flood on the town, and out comes a grown man who spent 26 years in the jungle.",
+      "Roll the dice and fear the consequences. A game you can't quit until someone reaches the end."
+    ]
+  },
+  "charlie_chocolate": {
+    "title": "Charlie and the Chocolate Factory",
+    "aliases": [],
+    "director": "Tim Burton",
+    "descriptions": [
+      "A boy from a poor family finds a golden ticket in a candy wrapper and joins four spoiled children on a tour of an eccentric confectioner's works, staffed by tiny Oompa-Loompas.",
+      "A river of cocoa, nut-sorting squirrels and gum that turns a girl into a blueberry. A Roald Dahl adaptation."
+    ]
   }
 }
