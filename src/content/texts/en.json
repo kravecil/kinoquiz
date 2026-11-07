@@ -1408,5 +1408,236 @@
       "An old woman dying in a Rome hospital confesses she hid a treasure under a lion in Leningrad. Her grandson, a doctor, an orderly and a mobster race to the USSR, helped by a local guide.",
       "A rising drawbridge, a live lion in a car and a chase down a snowy highway. A Soviet-Italian co-production."
     ]
+  },
+  "officers": {
+    "title": "Officers",
+    "aliases": [],
+    "director": "Vladimir Rogovoy",
+    "descriptions": [
+      "Two cavalry friends go through the Civil War, battles with Central Asian rebels, Spain and World War II together. One man's wife follows him from garrison to garrison all her life.",
+      "There is such a profession: defending your homeland. A song about the heroes of bygone times."
+    ]
+  },
+  "only_old_men": {
+    "title": "Only Old Men Are Going to Battle",
+    "aliases": [],
+    "director": "Leonid Bykov",
+    "descriptions": [
+      "A singing fighter squadron in wartime: the commander forms his pilots into a choir, trains young flyers and loses friends in the skies over Ukraine.",
+      "A war film with more music than shooting. The director himself plays the squadron leader."
+    ]
+  },
+  "cranes_flying": {
+    "title": "The Cranes Are Flying",
+    "aliases": [],
+    "director": "Mikhail Kalatozov",
+    "descriptions": [
+      "Young lovers in Moscow part ways in the first days of the war: he volunteers for the front, she stays behind waiting and makes a mistake she will regret.",
+      "The only Soviet film to win the Palme d'Or at Cannes. Birch trees spinning as a soldier dies."
+    ]
+  },
+  "fate_man": {
+    "title": "Fate of a Man",
+    "aliases": [],
+    "director": "Sergei Bondarchuk",
+    "descriptions": [
+      "A driver who lost his entire family in the war and survived German captivity meets a homeless boy outside a tea house after the victory and tells him he is his father.",
+      "An adaptation of Mikhail Sholokhov's short story. A glass of vodka without a bite in front of the camp commandant."
+    ]
+  },
+  "come_and_see": {
+    "title": "Come and See",
+    "aliases": [],
+    "director": "Elem Klimov",
+    "descriptions": [
+      "A Belarusian teenager digs up a rifle and joins the partisans, then witnesses punitive troops burning a village along with its people. In two days he ages decades.",
+      "One of the most harrowing war films ever made. Its title comes from the Book of Revelation."
+    ]
+  },
+  "brest_fortress": {
+    "title": "Fortress of War",
+    "aliases": [
+      "The Brest Fortress"
+    ],
+    "director": "Alexander Kott",
+    "descriptions": [
+      "June 22, 1941, through the eyes of a 14-year-old cadet in a military band: a garrison on the western border is the first to meet the German invasion and holds out for weeks.",
+      "I am dying, but I do not surrender. Farewell, Motherland. Words scratched on a barracks wall."
+    ]
+  },
+  "ninth_company": {
+    "title": "The 9th Company",
+    "aliases": [],
+    "director": "Fyodor Bondarchuk",
+    "descriptions": [
+      "Recruits from Krasnoyarsk go through boot camp in Fergana and are sent to Afghanistan, where their unit is ordered to hold a hilltop that headquarters has forgotten about.",
+      "The first big Russian blockbuster about the Soviet war in Afghanistan. A directorial debut."
+    ]
+  },
+  "brother2": {
+    "title": "Brother 2",
+    "aliases": [],
+    "director": "Aleksei Balabanov",
+    "descriptions": [
+      "A demobilized young man from St. Petersburg flies to Chicago to help the relative of a fallen army friend, cheated by an American businessman. He buys his guns off the street and stands up for the truth.",
+      "A sequel set among American skyscrapers, with a soundtrack of Russian rock."
+    ]
+  },
+  "boomer": {
+    "title": "Bimmer",
+    "aliases": [
+      "Boomer"
+    ],
+    "director": "Pyotr Buslov",
+    "descriptions": [
+      "Four friends from Moscow, fleeing gangsters and police, race across provincial Russia in a stolen black BMW. Its theme became the country's favorite ringtone.",
+      "A grim road movie about the 1990s, where the road only goes one way."
+    ]
+  },
+  "night_watch": {
+    "title": "Night Watch",
+    "aliases": [],
+    "director": "Timur Bekmambetov",
+    "descriptions": [
+      "A Moscow where the Others live among people — light magicians and dark vampires bound by an ancient truce. An agent of the forces of light protects a boy hunted by bloodsuckers.",
+      "Russian fantasy based on Sergei Lukyanenko's novel, with a crashing plane and creative subtitles."
+    ]
+  },
+  "dmb": {
+    "title": "DMB",
+    "aliases": [],
+    "director": "Roman Kachanov",
+    "descriptions": [
+      "Three conscripts, each drafted for an absurd reason of his own, serve in a unit where the warrant officer philosophizes about life and a general muses about porcelain cups.",
+      "A string of army anecdotes and one-liners that turned into catchphrases. Written by Ivan Okhlobystin."
+    ]
+  },
+  "peculiarities_hunting": {
+    "title": "Peculiarities of the National Hunt",
+    "aliases": [],
+    "director": "Alexander Rogozhkin",
+    "descriptions": [
+      "A young Finn studying Russian traditions joins a general and friends on a trip to a forest lodge in Karelia, but instead of rifles there's vodka, a sauna and a cow in a bomber's bomb bay.",
+      "A comedy about a trip to the woods where shooting game is the least important part."
+    ]
+  },
+  "legend17": {
+    "title": "Legend No. 17",
+    "aliases": [],
+    "director": "Nikolai Lebedev",
+    "descriptions": [
+      "A young CSKA hockey player becomes a star under a tough coach and takes the ice in the famous 1972 Summit Series against Canadian professionals.",
+      "A sports drama about a jersey number the whole country knows. Montreal, 7–3."
+    ]
+  },
+  "moving_up": {
+    "title": "Going Vertical",
+    "aliases": [],
+    "director": "Anton Megerdichev",
+    "descriptions": [
+      "Munich, 1972. The Soviet basketball team and its new coach challenge the unbeatable Americans. Everything comes down to the final three seconds.",
+      "Three seconds that lasted longer than the whole match. The highest-grossing Russian film of its time."
+    ]
+  },
+  "t34": {
+    "title": "T-34",
+    "aliases": [],
+    "director": "Alexey Sidorov",
+    "descriptions": [
+      "A captured Soviet tank lieutenant is ordered by the Germans to serve as a live target in training exercises. With his crew he repairs a captured tank and stages a daring breakout.",
+      "An action film about a duel of machines and crews, shot like a video game. Shells fly in slow motion."
+    ]
+  },
+  "burnt_by_sun": {
+    "title": "Burnt by the Sun",
+    "aliases": [],
+    "director": "Nikita Mikhalkov",
+    "descriptions": [
+      "A summer day in 1936 at the dacha of a legendary Red Army commander. His wife's former lover arrives, and by evening it's clear he has come not as a guest but to arrest the commander.",
+      "A ball of fire rolling over a wheat field. An Oscar for Best Foreign Language Film."
+    ]
+  },
+  "the_return": {
+    "title": "The Return",
+    "aliases": [],
+    "director": "Andrey Zvyagintsev",
+    "descriptions": [
+      "A father the two boys knew only from a photograph reappears after twelve years and takes his sons on a fishing trip to a remote island.",
+      "A parable about a stern father and his sons that won the Golden Lion in Venice. A box buried on an island."
+    ]
+  },
+  "viy": {
+    "title": "Viy",
+    "aliases": [],
+    "director": "Konstantin Yershov, Georgi Kropachyov",
+    "descriptions": [
+      "A Kyiv seminary student is sent to read prayers for three nights over the body of a dead witch in a village church. He draws a chalk circle, but the coffin begins to fly.",
+      "Lift up my eyelids! The first Soviet horror film, based on a Gogol story."
+    ]
+  },
+  "morozko": {
+    "title": "Jack Frost",
+    "aliases": [
+      "Morozko"
+    ],
+    "director": "Aleksandr Rou",
+    "descriptions": [
+      "A stepmother drives her meek stepdaughter into the winter forest, where she is tested by a grey-bearded wizard with a staff. Meanwhile a vain young man is turned into a bear for his arrogance.",
+      "Are you warm, maiden? A fairy tale that Czechs watch every Christmas."
+    ]
+  },
+  "amphibian_man": {
+    "title": "Amphibian Man",
+    "aliases": [],
+    "director": "Vladimir Chebotaryov, Gennadi Kazansky",
+    "descriptions": [
+      "A surgeon gives his son shark gills so the young fellow can live in the sea. He falls for a girl from a port town, while a greedy pearl trader wants to capture the sea devil.",
+      "A Soviet sci-fi classic based on Alexander Belyaev's novel, with a hit song about a sailor who swam too long."
+    ]
+  },
+  "cheburashka": {
+    "title": "Cheburashka",
+    "aliases": [],
+    "director": "Dmitriy Dyachenko",
+    "descriptions": [
+      "A big-eared little creature who arrived in a Black Sea town in a crate of oranges moves in with a grumpy gardener. He adores oranges, and the local chocolate empire sees him as a threat.",
+      "The highest-grossing Russian film ever. A fluffy cartoon hero in live action for the first time."
+    ]
+  },
+  "serf": {
+    "title": "Serf",
+    "aliases": [],
+    "director": "Klim Shipenko",
+    "descriptions": [
+      "A spoiled oligarch's son is pranked: after a car crash he wakes up in 1860 as a peasant on an estate. A psychologist and a whole troupe of actors re-educate him on the set.",
+      "A reality show about the past in which a rich kid learns to work. One of Russia's top-grossing comedies."
+    ]
+  },
+  "ballad_soldier": {
+    "title": "Ballad of a Soldier",
+    "aliases": [],
+    "director": "Grigori Chukhrai",
+    "descriptions": [
+      "A nineteen-year-old signalman knocks out two German tanks and, instead of a medal, asks for leave to fix his mother's roof. The journey home takes almost all of his six days.",
+      "A journey across a country at war in which every encounter becomes a small story."
+    ]
+  },
+  "white_bim": {
+    "title": "White Bim Black Ear",
+    "aliases": [],
+    "director": "Stanislav Rostotsky",
+    "descriptions": [
+      "An elderly writer and war veteran is taken to hospital, and his loyal setter sets out across the city to find him, meeting kind and cruel people along the way.",
+      "One of the saddest dog stories in Soviet cinema, based on Gavriil Troepolsky's novella."
+    ]
+  },
+  "kalina_krasnaya": {
+    "title": "The Red Snowball Tree",
+    "aliases": [],
+    "director": "Vasily Shukshin",
+    "descriptions": [
+      "A repeat offender gets out of prison and goes to a village to meet the woman he has been writing to. He tries to start an honest life, but his old gang won't let him go.",
+      "Birch trees he embraces and a celebration that never happens. Vasily Shukshin's last film as director."
+    ]
   }
 }
