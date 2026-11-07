@@ -485,5 +485,243 @@
       "Jurors decide the fate of a teenager accused of killing his father. Eleven are sure he is guilty, and only one has doubts. Almost the whole film takes place in one stuffy room.",
       "A black-and-white drama about reasonable doubt proving stronger than prejudice."
     ]
+  },
+  "dark_knight": {
+    "title": "The Dark Knight",
+    "aliases": [],
+    "director": "Christopher Nolan",
+    "descriptions": [
+      "Gotham's masked vigilante teams up with an idealistic district attorney against a chaotic criminal with a scarred grin who burns a mountain of cash just to watch the world burn.",
+      "The hero the city deserves, but not the one it needs right now. A story of chaos testing how far decent people will go."
+    ]
+  },
+  "godfather2": {
+    "title": "The Godfather Part II",
+    "aliases": [
+      "Godfather 2"
+    ],
+    "director": "Francis Ford Coppola",
+    "descriptions": [
+      "Two stories in one: a young Sicilian immigrant builds a criminal empire in early-1900s New York, while decades later his son tightens the family's grip in Cuba and Nevada, losing those closest to him.",
+      "A sequel to a mafia saga that many consider better than the first film. Power grows while the family falls apart."
+    ]
+  },
+  "star_wars_4": {
+    "title": "Star Wars: Episode IV – A New Hope",
+    "aliases": [
+      "Star Wars",
+      "A New Hope"
+    ],
+    "director": "George Lucas",
+    "descriptions": [
+      "A young man from a desert farm finds a droid carrying a secret message from a princess and, with an old Jedi and a smuggler, sets out to destroy a moon-sized battle station.",
+      "A long time ago in a galaxy far, far away… The start of a famous space saga about the Force and its dark side."
+    ]
+  },
+  "jurassic_park": {
+    "title": "Jurassic Park",
+    "aliases": [],
+    "director": "Steven Spielberg",
+    "descriptions": [
+      "A billionaire clones dinosaurs from ancient DNA preserved in amber and invites scientists to his island attraction. During a storm, the power goes out.",
+      "Life finds a way. Ripples in a glass of water warn of trouble."
+    ]
+  },
+  "jaws": {
+    "title": "Jaws",
+    "aliases": [],
+    "director": "Steven Spielberg",
+    "descriptions": [
+      "A huge great white shark attacks swimmers off a resort island. The police chief, an oceanographer and an old fisherman head out to sea to hunt it. You're gonna need a bigger boat.",
+      "Two notes of music, and nobody wants to go in the water anymore. The film that started the summer blockbuster."
+    ]
+  },
+  "indiana_raiders": {
+    "title": "Raiders of the Lost Ark",
+    "aliases": [
+      "Indiana Jones"
+    ],
+    "director": "Steven Spielberg",
+    "descriptions": [
+      "An archaeology professor in a fedora with a bullwhip races the Nazis for a sacred relic. It opens with him fleeing a giant rolling boulder.",
+      "A scholar who is afraid of snakes and nothing else. 1930s adventure in the spirit of old movie serials."
+    ]
+  },
+  "saving_ryan": {
+    "title": "Saving Private Ryan",
+    "aliases": [],
+    "director": "Steven Spielberg",
+    "descriptions": [
+      "After the Normandy landings, a captain and his squad are ordered behind enemy lines to find a paratrooper whose three brothers have been killed. It opens with the storming of Omaha Beach.",
+      "Is a single soldier's life worth the lives of eight? A war drama about duty and the price of an order."
+    ]
+  },
+  "avatar": {
+    "title": "Avatar",
+    "aliases": [],
+    "director": "James Cameron",
+    "descriptions": [
+      "A marine in a wheelchair gets a ten-foot blue body and travels to the jungle moon Pandora, where a corporation mines a valuable mineral. He falls for a woman of the Na'vi tribe.",
+      "The highest-grossing film of its time, shot in 3D. Floating mountains and trees that remember."
+    ]
+  },
+  "alien": {
+    "title": "Alien",
+    "aliases": [],
+    "director": "Ridley Scott",
+    "descriptions": [
+      "The crew of a commercial space tug answers a signal from an unknown planet. One astronaut comes back with a creature on his face, and soon a hunt begins on board.",
+      "In space no one can hear you scream. Science fiction that turns into a horror film."
+    ]
+  },
+  "pirates_caribbean": {
+    "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "aliases": [
+      "Pirates of the Caribbean"
+    ],
+    "director": "Gore Verbinski",
+    "descriptions": [
+      "An eccentric captain without a ship teams up with a blacksmith to rescue the governor's daughter from a crew that turns into skeletons in the moonlight.",
+      "Rum, a compass that doesn't point north and an undead crew. A film based on a Disneyland ride."
+    ]
+  },
+  "lotr_fellowship": {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "aliases": [
+      "The Fellowship of the Ring"
+    ],
+    "director": "Peter Jackson",
+    "descriptions": [
+      "A young hobbit inherits a dangerous heirloom from his uncle and leaves the Shire with a wizard, an elf, a dwarf and two men on a long journey. The first film of the Tolkien trilogy.",
+      "Nine travelers, a single burden and a bridge where a grey wizard declares: You shall not pass!"
+    ]
+  },
+  "avengers_endgame": {
+    "title": "Avengers: Endgame",
+    "aliases": [],
+    "director": "Anthony and Joe Russo",
+    "descriptions": [
+      "After a villain wiped out half of all life in the universe with a snap of his fingers, the surviving superheroes try to undo it through time travel.",
+      "The 22nd film of a huge comic-book universe and a long farewell to its heroes. I love you 3000."
+    ]
+  },
+  "seven": {
+    "title": "Se7en",
+    "aliases": [
+      "Seven"
+    ],
+    "director": "David Fincher",
+    "descriptions": [
+      "An old detective about to retire and his young partner investigate a series of murders in a rainy city, each punishing a deadly sin. What's in the box?",
+      "A grim thriller where the worst thing happens not on screen but in a package delivered to the desert."
+    ]
+  },
+  "departed": {
+    "title": "The Departed",
+    "aliases": [],
+    "director": "Martin Scorsese",
+    "descriptions": [
+      "Boston. A young cop goes undercover in the Irish mob while a mob plant rises through the police. Each is hunting for the rat in his own ranks.",
+      "A remake of a Hong Kong thriller that finally won its director an Oscar. Two double agents and one woman."
+    ]
+  },
+  "wolf_wall_street": {
+    "title": "The Wolf of Wall Street",
+    "aliases": [],
+    "director": "Martin Scorsese",
+    "descriptions": [
+      "A young New York stockbroker starts a firm selling penny stocks and drowns in money, parties and drugs until the FBI comes for him. Sell me this pen.",
+      "The rise and fall of a financial fraudster, told by the man himself without a drop of remorse."
+    ]
+  },
+  "django": {
+    "title": "Django Unchained",
+    "aliases": [],
+    "director": "Quentin Tarantino",
+    "descriptions": [
+      "A German bounty hunter buys an enslaved man's freedom, and together they ride south to rescue his wife from a cruel plantation owner.",
+      "A spaghetti western about revenge in pre-Civil War America. The D is silent."
+    ]
+  },
+  "inglourious": {
+    "title": "Inglourious Basterds",
+    "aliases": [],
+    "director": "Quentin Tarantino",
+    "descriptions": [
+      "During World War II a squad of Jewish-American soldiers terrorizes the Nazis, while a Paris cinema owner plans her revenge at a propaganda film premiere.",
+      "Alternate history in which the war is decided by nitrate film in a movie theater. Dialogue in four languages."
+    ]
+  },
+  "kill_bill": {
+    "title": "Kill Bill: Vol. 1",
+    "aliases": [],
+    "director": "Quentin Tarantino",
+    "descriptions": [
+      "A bride in a yellow tracksuit wakes from a coma and takes a samurai sword to the former assassin colleagues who gunned down her wedding.",
+      "Revenge is a dish best served cold. A bloody mix of kung fu, anime and western, told in two volumes."
+    ]
+  },
+  "one_flew": {
+    "title": "One Flew Over the Cuckoo's Nest",
+    "aliases": [],
+    "director": "Miloš Forman",
+    "descriptions": [
+      "A small-time criminal fakes insanity to get out of prison labor and lands in a psychiatric ward, where he challenges the icy head nurse.",
+      "A rebellion against a system that cures with obedience. A giant silent patient and a heavy marble water fountain."
+    ]
+  },
+  "rain_man": {
+    "title": "Rain Man",
+    "aliases": [],
+    "director": "Barry Levinson",
+    "descriptions": [
+      "A cocky car dealer learns his father left his fortune to an autistic brother he never knew existed. They drive across America, counting toothpicks and cards in Las Vegas.",
+      "A road trip in which a selfish hustler learns to care for someone. Four Oscars, including Best Picture."
+    ]
+  },
+  "beautiful_mind": {
+    "title": "A Beautiful Mind",
+    "aliases": [],
+    "director": "Ron Howard",
+    "descriptions": [
+      "A brilliant Princeton mathematician develops a theory of equilibrium, then starts seeing conspiracies and people who aren't there. The Nobel Prize comes decades later.",
+      "The true story of a scientist who spent years telling reality from hallucination by sheer logic."
+    ]
+  },
+  "pursuit_happyness": {
+    "title": "The Pursuit of Happyness",
+    "aliases": [],
+    "director": "Gabriele Muccino",
+    "descriptions": [
+      "A single father with a little son sleeps in subway restrooms and shelters, sells bone-density scanners and takes an unpaid internship at a brokerage firm.",
+      "A true story of poverty, stubbornness and a Rubik's Cube solved in a taxi."
+    ]
+  },
+  "dead_poets": {
+    "title": "Dead Poets Society",
+    "aliases": [],
+    "director": "Peter Weir",
+    "descriptions": [
+      "A new English teacher at a strict boys' prep school teaches his students to think for themselves, stand on their desks and seize the day — carpe diem.",
+      "O Captain! My Captain! A drama about a freedom the grown-ups aren't ready to give."
+    ]
+  },
+  "ghost": {
+    "title": "Ghost",
+    "aliases": [],
+    "director": "Jerry Zucker",
+    "descriptions": [
+      "A banker is murdered in the street, but his spirit stays near the woman he loves to protect her. Only a fraudulent psychic can help him. The famous pottery wheel scene.",
+      "A love that doesn't end with death. Unchained Melody and a clay vase."
+    ]
+  },
+  "pretty_woman": {
+    "title": "Pretty Woman",
+    "aliases": [],
+    "director": "Garry Marshall",
+    "descriptions": [
+      "A wealthy businessman hires a girl from Hollywood Boulevard to accompany him to society events for a week. Shopping on Rodeo Drive: Big mistake. Huge!",
+      "A modern Cinderella in Beverly Hills, named after a Roy Orbison song."
+    ]
   }
 }
