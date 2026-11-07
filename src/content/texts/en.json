@@ -723,5 +723,230 @@
       "A wealthy businessman hires a girl from Hollywood Boulevard to accompany him to society events for a week. Shopping on Rodeo Drive: Big mistake. Huge!",
       "A modern Cinderella in Beverly Hills, named after a Roy Orbison song."
     ]
+  },
+  "snatch": {
+    "title": "Snatch",
+    "aliases": [],
+    "director": "Guy Ritchie",
+    "descriptions": [
+      "London gangsters, an underground bare-knuckle boxer, a Russian with a gun and a dog that swallowed a squeaky toy all chase a huge stolen diamond.",
+      "A criminal merry-go-round where nobody understands what the traveller says, yet everyone wants a stone the size of a fist."
+    ]
+  },
+  "gentlemen": {
+    "title": "The Gentlemen",
+    "aliases": [],
+    "director": "Guy Ritchie",
+    "descriptions": [
+      "An American who built an underground marijuana empire beneath aristocrats' estates in England decides to sell, and a hunt begins. The story is pitched as a screenplay by a cheeky private eye.",
+      "Tweed suits, a pig farm and a boxing coach with rapping students. Manners are armor."
+    ]
+  },
+  "big_lebowski": {
+    "title": "The Big Lebowski",
+    "aliases": [],
+    "director": "Joel and Ethan Coen",
+    "descriptions": [
+      "An unemployed slacker who loves bowling and White Russians is mistaken for a millionaire with the same name. Thugs ruin his rug, and he gets dragged into a strange kidnapping case.",
+      "That rug really tied the room together. A cult comedy about staying mellow in an uptight world."
+    ]
+  },
+  "mad_max_fury": {
+    "title": "Mad Max: Fury Road",
+    "aliases": [],
+    "director": "George Miller",
+    "descriptions": [
+      "In a post-apocalyptic desert, a one-armed warrior steals an armored truck carrying a tyrant's wives, and a drifting ex-cop helps them escape. An army of roaring vehicles with a flame-throwing guitarist gives chase.",
+      "Nearly the whole film is one long chase there and back. Six Oscars and hardly any dialogue."
+    ]
+  },
+  "shining": {
+    "title": "The Shining",
+    "aliases": [],
+    "director": "Stanley Kubrick",
+    "descriptions": [
+      "A writer takes a job as the winter caretaker of a snowbound mountain hotel with a dark past, bringing his wife and son. The boy rides his tricycle down empty hallways and meets twin girls.",
+      "Hundreds of pages of the same sentence. A Stephen King adaptation the author himself disliked."
+    ]
+  },
+  "casablanca": {
+    "title": "Casablanca",
+    "aliases": [],
+    "director": "Michael Curtiz",
+    "descriptions": [
+      "During World War II a cynical American nightclub owner in Morocco meets his former love, who must escape the Nazis together with her husband, a Resistance leader.",
+      "Play it again. A Hollywood classic where a farewell on a foggy airfield is the beginning of a beautiful friendship."
+    ]
+  },
+  "some_like_hot": {
+    "title": "Some Like It Hot",
+    "aliases": [],
+    "director": "Billy Wilder",
+    "descriptions": [
+      "Two Chicago musicians witness a gangland massacre and escape to Florida disguised as women in an all-female band. A millionaire starts courting one of them.",
+      "Well, nobody's perfect. A black-and-white comedy starring Marilyn Monroe and a ukulele."
+    ]
+  },
+  "gone_wind": {
+    "title": "Gone with the Wind",
+    "aliases": [],
+    "director": "Victor Fleming",
+    "descriptions": [
+      "The headstrong daughter of a rich Georgia planter survives the Civil War, ruin and three marriages, yet loves the wrong man all her life.",
+      "After all, tomorrow is another day. A four-hour epic that won eight Oscars."
+    ]
+  },
+  "groundhog": {
+    "title": "Groundhog Day",
+    "aliases": [],
+    "director": "Harold Ramis",
+    "descriptions": [
+      "An arrogant TV weatherman comes to a small town for a festival and gets stuck in time: every morning it's February 2 again, and the alarm clock plays the same song.",
+      "The same 24 hours lived thousands of times until a cynic learns to be kind."
+    ]
+  },
+  "mask": {
+    "title": "The Mask",
+    "aliases": [],
+    "director": "Chuck Russell",
+    "descriptions": [
+      "A shy bank clerk fishes an ancient wooden artifact out of a river and, putting it on, becomes a green-faced cartoon maniac in a yellow suit who wins over a singer and outwits gangsters.",
+      "Smokin'! A comedy where the hero's face follows the laws of cartoons, and the dog wants in on the fun."
+    ]
+  },
+  "men_in_black": {
+    "title": "Men in Black",
+    "aliases": [],
+    "director": "Barry Sonnenfeld",
+    "descriptions": [
+      "A New York cop is recruited by a secret agency that polices aliens living on Earth. The agents wear dark suits and wipe witnesses' memories with a flashing device.",
+      "A giant bug wearing a farmer's skin and a galaxy on a cat's collar. A comedy about very strange neighbors on our planet."
+    ]
+  },
+  "die_hard": {
+    "title": "Die Hard",
+    "aliases": [],
+    "director": "John McTiernan",
+    "descriptions": [
+      "A New York cop arrives at his wife's Christmas party in a Los Angeles skyscraper just as robbers seize it. Barefoot, in a tank top and armed with a radio, he takes on the gang alone.",
+      "Yippee-ki-yay! Christmas movie or action movie — an argument that still hasn't ended."
+    ]
+  },
+  "fifth_element": {
+    "title": "The Fifth Element",
+    "aliases": [],
+    "director": "Luc Besson",
+    "descriptions": [
+      "23rd-century New York. A cab driver and ex-commando catches a red-haired girl who falls from the sky into his car; she holds the key to saving Earth from a great evil. A blue-skinned opera diva sings.",
+      "Multipass! A colorful space fairy tale with flying cars and costumes by Jean-Paul Gaultier."
+    ]
+  },
+  "taxi_fr": {
+    "title": "Taxi",
+    "aliases": [],
+    "director": "Gérard Pirès",
+    "descriptions": [
+      "A Marseille speed demon in a white Peugeot souped up for racing helps a clumsy cop who can't drive catch a gang of German robbers in Mercedes cars.",
+      "A French comedy whose real star is a car with a pop-up spoiler. Written by Luc Besson."
+    ]
+  },
+  "knockin_heaven": {
+    "title": "Knockin' on Heaven's Door",
+    "aliases": [],
+    "director": "Thomas Jahn",
+    "descriptions": [
+      "Two terminally ill young men meet in a hospital, steal a Mercedes with a gangster's million in the trunk and head for the sea they have never seen.",
+      "Up there, all anyone talks about is the sea. A German road movie about a last wish."
+    ]
+  },
+  "life_beautiful": {
+    "title": "Life Is Beautiful",
+    "aliases": [],
+    "director": "Roberto Benigni",
+    "descriptions": [
+      "A cheerful Jewish-Italian waiter is sent to a concentration camp with his little son and convinces the boy it's all a game where points can win a real tank.",
+      "Comedy and tragedy in one film: a father who invents a fairy tale to save his son. Three Oscars."
+    ]
+  },
+  "cinema_paradiso": {
+    "title": "Cinema Paradiso",
+    "aliases": [],
+    "director": "Giuseppe Tornatore",
+    "descriptions": [
+      "A famous Roman director returns to his Sicilian village for the funeral of the old projectionist who taught him to love movies as a boy. The local priest had every kiss cut from the films.",
+      "Nostalgia for a movie house where a whole village laughed, cried and fell in love. A reel of censored kisses."
+    ]
+  },
+  "slumdog": {
+    "title": "Slumdog Millionaire",
+    "aliases": [],
+    "director": "Danny Boyle",
+    "descriptions": [
+      "A young man from Mumbai's slums is arrested for cheating: he is one question away from the top prize on an Indian quiz show. He knows each answer from a moment in his own life.",
+      "It is written. Eight Oscars and a dance on a train platform over the end credits."
+    ]
+  },
+  "grand_budapest": {
+    "title": "The Grand Budapest Hotel",
+    "aliases": [],
+    "director": "Wes Anderson",
+    "descriptions": [
+      "An impeccable concierge at a luxurious mountain resort in a fictional Alpine country and his young lobby boy get caught up in the theft of a painting and a fight over an inheritance.",
+      "A pastel-pink fairy tale about a Europe that vanished. Patisserie boxes and a prison break."
+    ]
+  },
+  "social_network": {
+    "title": "The Social Network",
+    "aliases": [],
+    "director": "David Fincher",
+    "descriptions": [
+      "A Harvard programming student builds a site for rating classmates in one night, then a service that will connect billions of people. Meanwhile, two lawsuits with former friends unfold.",
+      "You don't get to 500 million friends without making a few enemies. Aaron Sorkin's dialogue and a Trent Reznor score."
+    ]
+  },
+  "gone_girl": {
+    "title": "Gone Girl",
+    "aliases": [],
+    "director": "David Fincher",
+    "descriptions": [
+      "On their fifth anniversary a wife vanishes from their Missouri home, and every clue points to her husband. The press makes him the prime suspect, while her diary tells another story.",
+      "The perfect couple everyone knew everything about, except the truth. A thriller about marriage as a public performance."
+    ]
+  },
+  "benjamin_button": {
+    "title": "The Curious Case of Benjamin Button",
+    "aliases": [],
+    "director": "David Fincher",
+    "descriptions": [
+      "A boy is born in New Orleans as a frail old man and grows younger every year. He lives a century in reverse and shares only a brief time with the woman he loves, when their ages meet.",
+      "A station clock runs backward, and a life starts from the end. Based on an F. Scott Fitzgerald story."
+    ]
+  },
+  "cast_away": {
+    "title": "Cast Away",
+    "aliases": [],
+    "director": "Robert Zemeckis",
+    "descriptions": [
+      "A delivery company employee survives a plane crash and spends four years alone on a desert island. His only companion is a volleyball with a face painted on it.",
+      "A package that was never opened and a friend lost to the waves. A film about making fire and keeping your sanity."
+    ]
+  },
+  "devil_prada": {
+    "title": "The Devil Wears Prada",
+    "aliases": [],
+    "director": "David Frankel",
+    "descriptions": [
+      "A journalism graduate with no interest in fashion becomes the second assistant to the tyrannical editor-in-chief of a glossy magazine. The job demands an unpublished Harry Potter manuscript and her personal life.",
+      "A monologue about a cerulean sweater that explains the entire fashion industry. That's all."
+    ]
+  },
+  "bohemian_rhapsody": {
+    "title": "Bohemian Rhapsody",
+    "aliases": [],
+    "director": "Bryan Singer",
+    "descriptions": [
+      "The son of immigrants from Zanzibar, working as a baggage handler at Heathrow, becomes the frontman of a British rock band with operatic ambitions. The climax is 20 minutes of Live Aid at Wembley.",
+      "Six minutes with no chorus that nobody wanted on the radio. A biopic of a voice known around the world."
+    ]
   }
 }
