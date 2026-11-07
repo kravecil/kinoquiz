@@ -50,6 +50,17 @@ export interface GameConfig {
     /** Минимальный интервал между полноэкранной рекламой, секунды (поверх лимита площадки). */
     interstitialCooldownSec: number;
   };
+  /** Режим «Хардкор»: вместо вариантов игрок вписывает название сам. */
+  hardcore: {
+    /** Множитель очков за верный ответ. */
+    scoreMultiplier: number;
+    /** Множитель жетонов за верный ответ (бонус за серию не умножается). */
+    coinsMultiplier: number;
+    /** Время на полный бонус скорости: набрать название дольше, чем нажать кнопку. */
+    fastAnswerSec: number;
+    /** Подсказки, которые без вариантов ответа не имеют смысла. */
+    disabledHints: HintType[];
+  };
 }
 
 export const defaultConfig: GameConfig = {
@@ -84,4 +95,10 @@ export const defaultConfig: GameConfig = {
     revivesPerRun: 1,
   },
   ads: { interstitialCooldownSec: 90 },
+  hardcore: {
+    scoreMultiplier: 2,
+    coinsMultiplier: 2,
+    fastAnswerSec: 15,
+    disabledHints: ['fifty'],
+  },
 };

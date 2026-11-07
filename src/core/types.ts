@@ -66,4 +66,7 @@ export interface QuizQuestion {
   options: string[];
 }
 
+/** classic — четыре билета-варианта; hardcore — название вписывается вручную. */
+export type GameMode = 'classic' | 'hardcore';
+
 export type HintType = 'fifty' | 'year' | 'genre' | 'director' | 'skip' | 'shield';

@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { defaultConfig } from '@/core/config';
 import { createRng } from '@/core/rng';
 import { MarathonRun } from '@/core/quiz/marathon';
+import { buildTitleIndex, checkTitle, titleVariants } from '@/core/quiz/titleMatch';
 import { LANGUAGES, resolveLang, setLanguage, t, tn } from '@/i18n';
 import { loadFilms } from './index';
 
@@ -20,6 +21,42 @@ describe('контент', () => {
         expect(q.text.length).toBeGreaterThan(20);
         run.answer(q.film.id, answered * 1000);
         snap = run.next(answered * 1000);
+        answered++;
+      }
+      expect(answered).toBe(films.length);
+    });
+  }
+});
+
+describe('хардкор на настоящем каталоге', () => {
+  for (const lang of LANGUAGES) {
+    it(`[${lang.code}] название и каждый alias узнаются как свой фильм`, async () => {
+      const films = await loadFilms(lang.code);
+      const index = buildTitleIndex(films);
+      const problems: string[] = [];
+      for (const film of films) {
+        for (const { text, derived } of titleVariants(film)) {
+          const verdict = checkTitle(text, film.id, index);
+          // Общая часть франшизы («Властелин колец») может быть неоднозначной — это нормально.
+          const ok = verdict.kind === 'correct' || (derived && verdict.kind !== 'empty');
+          if (!ok) problems.push(`${film.id}: «${text}» → ${JSON.stringify(verdict)}`);
+        }
+      }
+      expect(problems).toEqual([]);
+    });
+
+    it(`[${lang.code}] марафон в хардкоре проходится вводом названий с опечаткой`, async () => {
+      const films = await loadFilms(lang.code);
+      const run = new MarathonRun(films, createRng(7), defaultConfig, new Set(), 'hardcore');
+      let snap = run.start(0);
+      let answered = 0;
+      while (snap.phase !== 'complete') {
+        const title = snap.question!.film.title.toLowerCase();
+        // Опечатка: пропущенная буква в середине длинного названия.
+        const mid = Math.floor(title.length / 2);
+        const typed = title.length >= 7 ? title.slice(0, mid) + title.slice(mid + 1) : title;
+        expect(run.answerText(typed, 0).kind, `${snap.question!.film.id}: ${typed}`).toBe('correct');
+        snap = run.next(0);
         answered++;
       }
       expect(answered).toBe(films.length);

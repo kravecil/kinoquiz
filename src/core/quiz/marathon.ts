@@ -1,15 +1,26 @@
 import type { GameConfig } from '../config';
 import type { Rng } from '../rng';
-import type { Difficulty, Film, HintType, QuizQuestion } from '../types';
+import type { Difficulty, Film, GameMode, HintType, QuizQuestion } from '../types';
 import { coinsFor, scoreFor } from '../scoring';
 import { pickQuestion } from './picker';
+import { buildTitleIndex, checkTitle, type TitleIndex } from './titleMatch';
 
 export type RunPhase = 'question' | 'reveal' | 'complete';
 
+/**
+ * picked — id выбранного (или названного) фильма; null, если в хардкоре ввод
+ * не похож ни на один фильм каталога или игрок сдался. typed — что игрок ввёл.
+ */
 export type AnswerResult =
-  | { kind: 'correct'; points: number; coins: number; streak: number }
-  | { kind: 'saved'; picked: string }
-  | { kind: 'wrong'; picked: string; correctId: string };
+  | { kind: 'correct'; points: number; coins: number; streak: number; typed?: string }
+  | { kind: 'saved'; picked: string | null; typed?: string }
+  | { kind: 'wrong'; picked: string | null; correctId: string; typed?: string };
+
+/**
+ * Ответ вводом в хардкоре. unclear — ответ не принят и ничего не стоит:
+ * пустой ввод или название, которое подходит к нескольким фильмам сразу.
+ */
+export type TextAnswerResult = AnswerResult | { kind: 'unclear'; reason: 'empty' | 'ambiguous' };
 
 export type HintEffect =
   | { type: 'fifty'; removed: string[] }
@@ -19,6 +30,7 @@ export type HintEffect =
 
 /** Неизменяемый снимок забега для интерфейса. */
 export interface RunSnapshot {
+  mode: GameMode;
   phase: RunPhase;
   question: QuizQuestion | null;
   /** Номер текущего вопроса, начиная с 1. */
@@ -33,6 +45,8 @@ export interface RunSnapshot {
   hintsUsed: readonly HintType[];
   removedOptions: readonly string[];
   wrongPicks: readonly string[];
+  /** Хардкор: неверные попытки, сгоревшие во «второй шанс». */
+  savedAttempts: readonly string[];
   shieldActive: boolean;
   lastResult: AnswerResult | null;
 }
@@ -56,7 +70,9 @@ export class MarathonRun {
   private hintsUsed: HintType[] = [];
   private removedOptions: string[] = [];
   private wrongPicks: string[] = [];
+  private savedAttempts: string[] = [];
   private shieldActive = false;
+  private titleIndex: TitleIndex | null = null;
   private lastResult: AnswerResult | null = null;
   private readonly usedFilms = new Set<string>();
   /** Ключи вопросов, показанных в этом забеге (для сохранения «виденных»). */
@@ -67,6 +83,7 @@ export class MarathonRun {
     private readonly rng: Rng,
     private readonly cfg: GameConfig,
     private readonly seen: ReadonlySet<string>,
+    readonly mode: GameMode = 'classic',
   ) {}
 
   start(now: number): RunSnapshot {
@@ -86,38 +103,81 @@ export class MarathonRun {
     return this.snapshot();
   }
 
+  /** Ответ выбором варианта (классический режим). */
   answer(optionId: string, now: number): AnswerResult {
     const q = this.requireQuestion();
+    if (this.mode !== 'classic') throw new Error('В хардкоре ответ вводится текстом');
     if (this.phase !== 'question') throw new Error('Ответ уже принят');
     if (this.removedOptions.includes(optionId) || this.wrongPicks.includes(optionId)) {
       throw new Error('Вариант недоступен');
     }
+    return this.resolve(optionId === q.film.id, optionId, now);
+  }
+
+  /** Ответ вводом названия (хардкор): опечатки, «ё/е» и варианты названия прощаются. */
+  answerText(input: string, now: number): TextAnswerResult {
+    const q = this.requireQuestion();
+    if (this.mode !== 'hardcore') throw new Error('Ввод названия — только в хардкоре');
+    if (this.phase !== 'question') throw new Error('Ответ уже принят');
+
+    this.titleIndex ??= buildTitleIndex(this.films);
+    const verdict = checkTitle(input, q.film.id, this.titleIndex);
+    if (verdict.kind === 'empty' || verdict.kind === 'ambiguous') {
+      return { kind: 'unclear', reason: verdict.kind };
+    }
+    const typed = input.trim();
+    if (verdict.kind === 'correct') return this.resolve(true, q.film.id, now, typed);
+    return this.resolve(false, verdict.matchedId, now, typed);
+  }
+
+  /** «Не знаю» (хардкор): засчитывается как ошибка, «второй шанс» не спасает. */
+  giveUp(): AnswerResult {
+    this.requireQuestion();
+    if (this.phase !== 'question') throw new Error('Ответ уже принят');
+    this.shieldActive = false;
+    return this.resolve(false, null, 0);
+  }
+
+  private resolve(isCorrect: boolean, picked: string | null, now: number, typed?: string): AnswerResult {
+    const q = this.requireQuestion();
+    const hardcore = this.mode === 'hardcore';
+    const extra = typed === undefined ? {} : { typed };
 
     let result: AnswerResult;
-    if (optionId === q.film.id) {
+    if (isCorrect) {
       this.streak += 1;
       this.bestStreak = Math.max(this.bestStreak, this.streak);
       this.correct += 1;
       const answerSec = (now - this.questionShownAt) / 1000;
       const points = scoreFor(
-        { difficulty: q.difficulty, answerSec, streak: this.streak, hintsUsed: this.scoredHints() },
+        {
+          difficulty: q.difficulty,
+          answerSec,
+          streak: this.streak,
+          hintsUsed: this.scoredHints(),
+          ...(hardcore && {
+            fastAnswerSec: this.cfg.hardcore.fastAnswerSec,
+            multiplier: this.cfg.hardcore.scoreMultiplier,
+          }),
+        },
         this.cfg,
       );
-      const coins = coinsFor(q.difficulty, this.streak, this.cfg);
+      const coins = coinsFor(q.difficulty, this.streak, this.cfg, hardcore ? this.cfg.hardcore.coinsMultiplier : 1);
       this.score += points;
       this.coinsEarned += coins;
-      result = { kind: 'correct', points, coins, streak: this.streak };
+      result = { kind: 'correct', points, coins, streak: this.streak, ...extra };
       this.phase = 'reveal';
     } else if (this.shieldActive) {
       // «Второй шанс»: ошибка не засчитывается, вариант гасится, вопрос остаётся.
       this.shieldActive = false;
-      this.wrongPicks.push(optionId);
-      result = { kind: 'saved', picked: optionId };
+      if (picked) this.wrongPicks.push(picked);
+      if (typed !== undefined) this.savedAttempts.push(typed);
+      result = { kind: 'saved', picked, ...extra };
     } else {
       this.streak = 0;
       this.wrong += 1;
-      this.wrongPicks.push(optionId);
-      result = { kind: 'wrong', picked: optionId, correctId: q.film.id };
+      if (picked) this.wrongPicks.push(picked);
+      result = { kind: 'wrong', picked, correctId: q.film.id, ...extra };
       this.phase = 'reveal';
     }
     this.lastResult = result;
@@ -129,6 +189,7 @@ export class MarathonRun {
     if (this.phase !== 'question' || !this.question) return false;
     if (type === 'skip') return true;
     if (this.hintsUsed.includes(type)) return false;
+    if (this.mode === 'hardcore') return !this.cfg.hardcore.disabledHints.includes(type);
     if (type === 'fifty') return this.availableWrongOptions().length >= 2;
     if (type === 'shield') return this.availableWrongOptions().length >= 1;
     return true;
@@ -173,6 +234,7 @@ export class MarathonRun {
 
   snapshot(): RunSnapshot {
     return {
+      mode: this.mode,
       phase: this.phase,
       question: this.question,
       number: this.number,
@@ -186,6 +248,7 @@ export class MarathonRun {
       hintsUsed: [...this.hintsUsed],
       removedOptions: [...this.removedOptions],
       wrongPicks: [...this.wrongPicks],
+      savedAttempts: [...this.savedAttempts],
       shieldActive: this.shieldActive,
       lastResult: this.lastResult,
     };
@@ -202,6 +265,7 @@ export class MarathonRun {
     this.hintsUsed = [];
     this.removedOptions = [];
     this.wrongPicks = [];
+    this.savedAttempts = [];
     this.shieldActive = false;
     this.lastResult = null;
 

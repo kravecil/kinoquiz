@@ -14,7 +14,10 @@ export interface SaveData {
   seen: string[];
   stats: {
     games: number;
+    /** Рекорд марафона — он же идёт в рейтинг площадки. */
     bestScore: number;
+    /** Рекорд хардкора (пока только локальный, без рейтинга). */
+    bestScoreHardcore: number;
     totalCorrect: number;
     bestStreak: number;
   };
@@ -46,7 +49,7 @@ export function createSave(now: number, cfg: GameConfig): SaveData {
     tickets: { count: cfg.tickets.max, updatedAt: now, unlimitedUntil: 0 },
     hints,
     seen: [],
-    stats: { games: 0, bestScore: 0, totalCorrect: 0, bestStreak: 0 },
+    stats: { games: 0, bestScore: 0, bestScoreHardcore: 0, totalCorrect: 0, bestStreak: 0 },
     settings: { sound: true, lang: null },
     noAds: false,
     lastDailyBonus: null,
@@ -81,6 +84,7 @@ export function migrateSave(raw: unknown, now: number, cfg: GameConfig): SaveDat
     stats: {
       games: num(data.stats?.games, 0),
       bestScore: num(data.stats?.bestScore, 0),
+      bestScoreHardcore: num(data.stats?.bestScoreHardcore, 0),
       totalCorrect: num(data.stats?.totalCorrect, 0),
       bestStreak: num(data.stats?.bestStreak, 0),
     },
